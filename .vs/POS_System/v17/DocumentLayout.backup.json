@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\POS_System\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{CEF98D7E-203F-4C26-BE2D-901CD11353C4}|POS_API\\POS_API.csproj|d:\\pos_system\\pos_api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEF98D7E-203F-4C26-BE2D-901CD11353C4}|POS_API\\POS_API.csproj|solutionrelative:pos_api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3C7F5925-A442-484D-9B8C-7734C92AE7B4}|POS.Shared\\POS.Shared.csproj|d:\\pos_system\\pos.shared\\dtos\\usershopdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3C7F5925-A442-484D-9B8C-7734C92AE7B4}|POS.Shared\\POS.Shared.csproj|solutionrelative:pos.shared\\dtos\\usershopdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -13,10 +17,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{3C7F5925-A442-484D-9B8C-7734C92AE7B4}|POS.Shared\\POS.Shared.csproj|d:\\pos_system\\pos.shared\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3C7F5925-A442-484D-9B8C-7734C92AE7B4}|POS.Shared\\POS.Shared.csproj|solutionrelative:pos.shared\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CEF98D7E-203F-4C26-BE2D-901CD11353C4}|POS_API\\POS_API.csproj|d:\\pos_system\\pos_api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CEF98D7E-203F-4C26-BE2D-901CD11353C4}|POS_API\\POS_API.csproj|solutionrelative:pos_api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CEF98D7E-203F-4C26-BE2D-901CD11353C4}|POS_API\\POS_API.csproj|d:\\pos_system\\pos_api\\repository\\imp\\autherepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -158,7 +158,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 13,
+          "SelectedChildIndex": 30,
           "Children": [
             {
               "$type": "Bookmark",
@@ -322,7 +322,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "UserShopDTO.cs",
               "DocumentMoniker": "D:\\POS_System\\POS.Shared\\DTOs\\UserShopDTO.cs",
               "RelativeDocumentMoniker": "POS.Shared\\DTOs\\UserShopDTO.cs",
@@ -335,7 +335,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Enums.cs",
               "DocumentMoniker": "D:\\POS_System\\POS.Shared\\Enum\\Enums.cs",
               "RelativeDocumentMoniker": "POS.Shared\\Enum\\Enums.cs",
@@ -426,12 +426,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "UserDTO.cs",
               "DocumentMoniker": "D:\\POS_System\\POS.Shared\\DTOs\\UserDTO.cs",
               "RelativeDocumentMoniker": "POS.Shared\\DTOs\\UserDTO.cs",
-              "ToolTip": "D:\\POS_System\\POS.Shared\\DTOs\\UserDTO.cs*",
-              "RelativeToolTip": "POS.Shared\\DTOs\\UserDTO.cs*",
+              "ToolTip": "D:\\POS_System\\POS.Shared\\DTOs\\UserDTO.cs",
+              "RelativeToolTip": "POS.Shared\\DTOs\\UserDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwA0AAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-28T13:54:13.114Z",
@@ -543,13 +543,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "AuthController.cs",
               "DocumentMoniker": "D:\\POS_System\\POS_API\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "POS_API\\Controllers\\AuthController.cs",
               "ToolTip": "D:\\POS_System\\POS_API\\Controllers\\AuthController.cs",
               "RelativeToolTip": "POS_API\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABUAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-28T13:38:33.33Z",
               "EditorCaption": ""

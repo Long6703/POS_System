@@ -26,5 +26,11 @@ namespace POS_API.Controllers
             }
             return Ok(new {token = result});
         }
+
+        [HttpPost("register")]
+        public async Task<IActionResult> Register()
+        {
+            return Ok();
+        }
     }
 }
