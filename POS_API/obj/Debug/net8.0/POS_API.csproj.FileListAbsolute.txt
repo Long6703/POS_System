@@ -155,3 +155,4 @@ D:\POS_System\POS_API\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
 D:\POS_System\POS_API\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
 D:\POS_System\POS_API\bin\Debug\net8.0\POS.Shared.dll
 D:\POS_System\POS_API\bin\Debug\net8.0\POS.Shared.pdb
+D:\POS_System\POS_API\obj\Debug\net8.0\POS_API.sourcelink.json

@@ -10,3 +10,4 @@ D:\POS_System\POS.Shared\obj\Debug\net8.0\refint\POS.Shared.dll
 D:\POS_System\POS.Shared\obj\Debug\net8.0\POS.Shared.pdb
 D:\POS_System\POS.Shared\obj\Debug\net8.0\ref\POS.Shared.dll
 D:\POS_System\POS.Shared\obj\Debug\net8.0\POS.Shared.csproj.AssemblyReference.cache
+D:\POS_System\POS.Shared\obj\Debug\net8.0\POS.Shared.sourcelink.json

@@ -12,12 +12,14 @@ namespace POS_API.Services.Imp
         private readonly IAuthRepository _authRepository;
         private readonly JwtHelper _jwt;
         private readonly IMapper _mapper;
+        private readonly IUnitOfWork _unitOfWork;
 
-        public AuthService(IAuthRepository authRepository,JwtHelper jwt, IMapper mapper)
+        public AuthService(IAuthRepository authRepository,JwtHelper jwt, IMapper mapper, IUnitOfWork unitOfWork)
         {
             _authRepository = authRepository;
             _jwt = jwt;
             _mapper = mapper;
+            _unitOfWork = unitOfWork;
         }
 
         public async Task<string> Login(LoginRequest request)
@@ -38,7 +40,11 @@ namespace POS_API.Services.Imp
 
             var token = _jwt.GenerateJwtToken(userDto);
             return token;
+        }
 
+        public Task<bool> Register(RegisterRequest register)
+        {
+            throw new NotImplementedException();
         }
     }
 }

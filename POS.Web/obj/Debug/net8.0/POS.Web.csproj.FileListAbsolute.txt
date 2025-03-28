@@ -36,3 +36,4 @@ D:\POS_System\POS.Web\obj\Debug\net8.0\POS.Web.pdb
 D:\POS_System\POS.Web\obj\Debug\net8.0\POS.Web.genruntimeconfig.cache
 D:\POS_System\POS.Web\obj\Debug\net8.0\ref\POS.Web.dll
 D:\POS_System\POS.Web\bin\Debug\net8.0\AutoMapper.dll
+D:\POS_System\POS.Web\obj\Debug\net8.0\POS.Web.sourcelink.json

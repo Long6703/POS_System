@@ -28,8 +28,9 @@ namespace POS_API.Controllers
         }
 
         [HttpPost("register")]
-        public async Task<IActionResult> Register()
+        public async Task<IActionResult> Register([FromBody] RegisterRequest register)
         {
+            var result = await _authService.Register(register);
             return Ok();
         }
     }
