@@ -3,6 +3,30 @@
   "WorkspaceRootPath": "D:\\POS_System\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\POS_System\\POS_API\\Migrations\\20250328160926_Update3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:POS_API\\Migrations\\20250328160926_Update3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C7F5925-A442-484D-9B8C-7734C92AE7B4}|POS.Shared\\POS.Shared.csproj|d:\\pos_system\\pos.shared\\entities\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C7F5925-A442-484D-9B8C-7734C92AE7B4}|POS.Shared\\POS.Shared.csproj|solutionrelative:pos.shared\\entities\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEF98D7E-203F-4C26-BE2D-901CD11353C4}|POS_API\\POS_API.csproj|d:\\pos_system\\pos_api\\databasecontext\\possystemdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEF98D7E-203F-4C26-BE2D-901CD11353C4}|POS_API\\POS_API.csproj|solutionrelative:pos_api\\databasecontext\\possystemdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C7F5925-A442-484D-9B8C-7734C92AE7B4}|POS.Shared\\POS.Shared.csproj|d:\\pos_system\\pos.shared\\enum\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C7F5925-A442-484D-9B8C-7734C92AE7B4}|POS.Shared\\POS.Shared.csproj|solutionrelative:pos.shared\\enum\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEF98D7E-203F-4C26-BE2D-901CD11353C4}|POS_API\\POS_API.csproj|d:\\pos_system\\pos_api\\controllers\\testcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEF98D7E-203F-4C26-BE2D-901CD11353C4}|POS_API\\POS_API.csproj|solutionrelative:pos_api\\controllers\\testcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEF98D7E-203F-4C26-BE2D-901CD11353C4}|POS_API\\POS_API.csproj|d:\\pos_system\\pos_api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEF98D7E-203F-4C26-BE2D-901CD11353C4}|POS_API\\POS_API.csproj|solutionrelative:pos_api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CEF98D7E-203F-4C26-BE2D-901CD11353C4}|POS_API\\POS_API.csproj|d:\\pos_system\\pos_api\\services\\imp\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CEF98D7E-203F-4C26-BE2D-901CD11353C4}|POS_API\\POS_API.csproj|solutionrelative:pos_api\\services\\imp\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -13,10 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{3C7F5925-A442-484D-9B8C-7734C92AE7B4}|POS.Shared\\POS.Shared.csproj|d:\\pos_system\\pos.shared\\requestmodel\\registerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3C7F5925-A442-484D-9B8C-7734C92AE7B4}|POS.Shared\\POS.Shared.csproj|solutionrelative:pos.shared\\requestmodel\\registerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CEF98D7E-203F-4C26-BE2D-901CD11353C4}|POS_API\\POS_API.csproj|d:\\pos_system\\pos_api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CEF98D7E-203F-4C26-BE2D-901CD11353C4}|POS_API\\POS_API.csproj|solutionrelative:pos_api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3C7F5925-A442-484D-9B8C-7734C92AE7B4}|POS.Shared\\POS.Shared.csproj|d:\\pos_system\\pos.shared\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -31,16 +51,8 @@
       "RelativeMoniker": "D:0:0:{CEF98D7E-203F-4C26-BE2D-901CD11353C4}|POS_API\\POS_API.csproj|solutionrelative:pos_api\\services\\iservices\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CEF98D7E-203F-4C26-BE2D-901CD11353C4}|POS_API\\POS_API.csproj|d:\\pos_system\\pos_api\\controllers\\testcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CEF98D7E-203F-4C26-BE2D-901CD11353C4}|POS_API\\POS_API.csproj|solutionrelative:pos_api\\controllers\\testcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3C7F5925-A442-484D-9B8C-7734C92AE7B4}|POS.Shared\\POS.Shared.csproj|d:\\pos_system\\pos.shared\\dtos\\usershopdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3C7F5925-A442-484D-9B8C-7734C92AE7B4}|POS.Shared\\POS.Shared.csproj|solutionrelative:pos.shared\\dtos\\usershopdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C7F5925-A442-484D-9B8C-7734C92AE7B4}|POS.Shared\\POS.Shared.csproj|d:\\pos_system\\pos.shared\\enum\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C7F5925-A442-484D-9B8C-7734C92AE7B4}|POS.Shared\\POS.Shared.csproj|solutionrelative:pos.shared\\enum\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3C7F5925-A442-484D-9B8C-7734C92AE7B4}|POS.Shared\\POS.Shared.csproj|d:\\pos_system\\pos.shared\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -63,10 +75,6 @@
       "RelativeMoniker": "D:0:0:{CEF98D7E-203F-4C26-BE2D-901CD11353C4}|POS_API\\POS_API.csproj|solutionrelative:pos_api\\helper\\jwthelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CEF98D7E-203F-4C26-BE2D-901CD11353C4}|POS_API\\POS_API.csproj|d:\\pos_system\\pos_api\\databasecontext\\possystemdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CEF98D7E-203F-4C26-BE2D-901CD11353C4}|POS_API\\POS_API.csproj|solutionrelative:pos_api\\databasecontext\\possystemdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\POS_System\\POS_API\\Migrations\\20250328143424_Update.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:POS_API\\Migrations\\20250328143424_Update.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -85,10 +93,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{3C7F5925-A442-484D-9B8C-7734C92AE7B4}|POS.Shared\\POS.Shared.csproj|d:\\pos_system\\pos.shared\\entities\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3C7F5925-A442-484D-9B8C-7734C92AE7B4}|POS.Shared\\POS.Shared.csproj|solutionrelative:pos.shared\\entities\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C7F5925-A442-484D-9B8C-7734C92AE7B4}|POS.Shared\\POS.Shared.csproj|d:\\pos_system\\pos.shared\\entities\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C7F5925-A442-484D-9B8C-7734C92AE7B4}|POS.Shared\\POS.Shared.csproj|solutionrelative:pos.shared\\entities\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\POS_System\\POS_API\\Migrations\\20250328142754_UpdateID.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -162,7 +166,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 28,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -170,7 +174,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "20250328160926_Update3.cs",
+              "DocumentMoniker": "D:\\POS_System\\POS_API\\Migrations\\20250328160926_Update3.cs",
+              "RelativeDocumentMoniker": "POS_API\\Migrations\\20250328160926_Update3.cs",
+              "ToolTip": "D:\\POS_System\\POS_API\\Migrations\\20250328160926_Update3.cs",
+              "RelativeToolTip": "POS_API\\Migrations\\20250328160926_Update3.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T16:09:26.953Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "RegisterRequest.cs",
               "DocumentMoniker": "D:\\POS_System\\POS.Shared\\RequestModel\\RegisterRequest.cs",
               "RelativeDocumentMoniker": "POS.Shared\\RequestModel\\RegisterRequest.cs",
@@ -183,7 +200,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 36,
               "Title": "20250328144351_UpdateUserShopRole.cs",
               "DocumentMoniker": "D:\\POS_System\\POS_API\\Migrations\\20250328144351_UpdateUserShopRole.cs",
               "RelativeDocumentMoniker": "POS_API\\Migrations\\20250328144351_UpdateUserShopRole.cs",
@@ -195,19 +212,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 2,
               "Title": "POSSystemDBContext.cs",
               "DocumentMoniker": "D:\\POS_System\\POS_API\\DatabaseContext\\POSSystemDBContext.cs",
               "RelativeDocumentMoniker": "POS_API\\DatabaseContext\\POSSystemDBContext.cs",
               "ToolTip": "D:\\POS_System\\POS_API\\DatabaseContext\\POSSystemDBContext.cs",
               "RelativeToolTip": "POS_API\\DatabaseContext\\POSSystemDBContext.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAmwE4AAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-28T14:40:55.224Z"
+              "WhenOpened": "2025-03-28T14:40:55.224Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 37,
               "Title": "20250328143631_Update2.cs",
               "DocumentMoniker": "D:\\POS_System\\POS_API\\Migrations\\20250328143631_Update2.cs",
               "RelativeDocumentMoniker": "POS_API\\Migrations\\20250328143631_Update2.cs",
@@ -219,7 +237,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 38,
               "Title": "20250328143538_Update.cs",
               "DocumentMoniker": "D:\\POS_System\\POS_API\\Migrations\\20250328143538_Update.cs",
               "RelativeDocumentMoniker": "POS_API\\Migrations\\20250328143538_Update.cs",
@@ -231,7 +249,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "20250328143424_Update.cs",
               "DocumentMoniker": "D:\\POS_System\\POS_API\\Migrations\\20250328143424_Update.cs",
               "RelativeDocumentMoniker": "POS_API\\Migrations\\20250328143424_Update.cs",
@@ -243,7 +261,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "20250328142754_UpdateID.cs",
               "DocumentMoniker": "D:\\POS_System\\POS_API\\Migrations\\20250328142754_UpdateID.cs",
               "RelativeDocumentMoniker": "POS_API\\Migrations\\20250328142754_UpdateID.cs",
@@ -255,7 +273,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "20250328142711_UpdateID.cs",
               "DocumentMoniker": "D:\\POS_System\\POS_API\\Migrations\\20250328142711_UpdateID.cs",
               "RelativeDocumentMoniker": "POS_API\\Migrations\\20250328142711_UpdateID.cs",
@@ -267,7 +285,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "Payment.cs",
               "DocumentMoniker": "D:\\POS_System\\POS.Shared\\Entities\\Payment.cs",
               "RelativeDocumentMoniker": "POS.Shared\\Entities\\Payment.cs",
@@ -279,7 +297,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "OrderDetail.cs",
               "DocumentMoniker": "D:\\POS_System\\POS.Shared\\Entities\\OrderDetail.cs",
               "RelativeDocumentMoniker": "POS.Shared\\Entities\\OrderDetail.cs",
@@ -291,7 +309,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "Mapping.cs",
               "DocumentMoniker": "D:\\POS_System\\POS.Shared\\MappingProfile\\Mapping.cs",
               "RelativeDocumentMoniker": "POS.Shared\\MappingProfile\\Mapping.cs",
@@ -303,7 +321,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "POS.Shared.csproj",
               "DocumentMoniker": "D:\\POS_System\\POS.Shared\\POS.Shared.csproj",
               "RelativeDocumentMoniker": "POS.Shared\\POS.Shared.csproj",
@@ -315,7 +333,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "POS_API.csproj",
               "DocumentMoniker": "D:\\POS_System\\POS_API\\POS_API.csproj",
               "RelativeDocumentMoniker": "POS_API\\POS_API.csproj",
@@ -327,7 +345,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "UserShopDTO.cs",
               "DocumentMoniker": "D:\\POS_System\\POS.Shared\\DTOs\\UserShopDTO.cs",
               "RelativeDocumentMoniker": "POS.Shared\\DTOs\\UserShopDTO.cs",
@@ -339,19 +357,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 3,
               "Title": "Enums.cs",
               "DocumentMoniker": "D:\\POS_System\\POS.Shared\\Enum\\Enums.cs",
               "RelativeDocumentMoniker": "POS.Shared\\Enum\\Enums.cs",
               "ToolTip": "D:\\POS_System\\POS.Shared\\Enum\\Enums.cs",
               "RelativeToolTip": "POS.Shared\\Enum\\Enums.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAQAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-28T14:10:40.175Z"
+              "WhenOpened": "2025-03-28T14:10:40.175Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "UnitOfWork.cs",
               "DocumentMoniker": "D:\\POS_System\\POS_API\\Repository\\Imp\\UnitOfWork.cs",
               "RelativeDocumentMoniker": "POS_API\\Repository\\Imp\\UnitOfWork.cs",
@@ -363,19 +382,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 1,
               "Title": "Order.cs",
               "DocumentMoniker": "D:\\POS_System\\POS.Shared\\Entities\\Order.cs",
               "RelativeDocumentMoniker": "POS.Shared\\Entities\\Order.cs",
               "ToolTip": "D:\\POS_System\\POS.Shared\\Entities\\Order.cs",
               "RelativeToolTip": "POS.Shared\\Entities\\Order.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBsAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-28T13:57:47.043Z"
+              "WhenOpened": "2025-03-28T13:57:47.043Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "Product.cs",
               "DocumentMoniker": "D:\\POS_System\\POS.Shared\\Entities\\Product.cs",
               "RelativeDocumentMoniker": "POS.Shared\\Entities\\Product.cs",
@@ -387,7 +407,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "Shop.cs",
               "DocumentMoniker": "D:\\POS_System\\POS.Shared\\Entities\\Shop.cs",
               "RelativeDocumentMoniker": "POS.Shared\\Entities\\Shop.cs",
@@ -399,7 +419,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "UserShop.cs",
               "DocumentMoniker": "D:\\POS_System\\POS.Shared\\Entities\\UserShop.cs",
               "RelativeDocumentMoniker": "POS.Shared\\Entities\\UserShop.cs",
@@ -412,7 +432,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "User.cs",
               "DocumentMoniker": "D:\\POS_System\\POS.Shared\\Entities\\User.cs",
               "RelativeDocumentMoniker": "POS.Shared\\Entities\\User.cs",
@@ -425,7 +445,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "UserDTO.cs",
               "DocumentMoniker": "D:\\POS_System\\POS.Shared\\DTOs\\UserDTO.cs",
               "RelativeDocumentMoniker": "POS.Shared\\DTOs\\UserDTO.cs",
@@ -437,7 +457,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "JwtHelper.cs",
               "DocumentMoniker": "D:\\POS_System\\POS_API\\Helper\\JwtHelper.cs",
               "RelativeDocumentMoniker": "POS_API\\Helper\\JwtHelper.cs",
@@ -449,7 +469,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "HashingService.cs",
               "DocumentMoniker": "D:\\POS_System\\POS_API\\Helper\\HashingService.cs",
               "RelativeDocumentMoniker": "POS_API\\Helper\\HashingService.cs",
@@ -461,7 +481,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 31,
               "Title": "IGenericRepository.cs",
               "DocumentMoniker": "D:\\POS_System\\POS_API\\Repository\\IRepository\\IGenericRepository.cs",
               "RelativeDocumentMoniker": "POS_API\\Repository\\IRepository\\IGenericRepository.cs",
@@ -473,7 +493,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "AutheRepository.cs",
               "DocumentMoniker": "D:\\POS_System\\POS_API\\Repository\\Imp\\AutheRepository.cs",
               "RelativeDocumentMoniker": "POS_API\\Repository\\Imp\\AutheRepository.cs",
@@ -485,7 +505,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
               "Title": "IAuthRepository.cs",
               "DocumentMoniker": "D:\\POS_System\\POS_API\\Repository\\IRepository\\IAuthRepository.cs",
               "RelativeDocumentMoniker": "POS_API\\Repository\\IRepository\\IAuthRepository.cs",
@@ -497,20 +517,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "AuthService.cs",
               "DocumentMoniker": "D:\\POS_System\\POS_API\\Services\\Imp\\AuthService.cs",
               "RelativeDocumentMoniker": "POS_API\\Services\\Imp\\AuthService.cs",
               "ToolTip": "D:\\POS_System\\POS_API\\Services\\Imp\\AuthService.cs",
               "RelativeToolTip": "POS_API\\Services\\Imp\\AuthService.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAgwBsAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAAgwDIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-28T13:42:38.911Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "IAuthService.cs",
               "DocumentMoniker": "D:\\POS_System\\POS_API\\Services\\IServices\\IAuthService.cs",
               "RelativeDocumentMoniker": "POS_API\\Services\\IServices\\IAuthService.cs",
@@ -523,7 +543,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 32,
               "Title": "LoginRequest.cs",
               "DocumentMoniker": "D:\\POS_System\\POS.Shared\\RequestModel\\LoginRequest.cs",
               "RelativeDocumentMoniker": "POS.Shared\\RequestModel\\LoginRequest.cs",
@@ -535,7 +555,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "AuthController.cs",
               "DocumentMoniker": "D:\\POS_System\\POS_API\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "POS_API\\Controllers\\AuthController.cs",
@@ -548,20 +568,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
               "Title": "TestController.cs",
               "DocumentMoniker": "D:\\POS_System\\POS_API\\Controllers\\TestController.cs",
               "RelativeDocumentMoniker": "POS_API\\Controllers\\TestController.cs",
               "ToolTip": "D:\\POS_System\\POS_API\\Controllers\\TestController.cs",
               "RelativeToolTip": "POS_API\\Controllers\\TestController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-28T13:37:01.657Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\POS_System\\POS_API\\Program.cs",
               "RelativeDocumentMoniker": "POS_API\\Program.cs",
@@ -574,7 +594,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 33,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\POS_System\\POS_API\\appsettings.json",
               "RelativeDocumentMoniker": "POS_API\\appsettings.json",
@@ -586,7 +606,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "Registration.cs",
               "DocumentMoniker": "D:\\POS_System\\POS_API\\Registration.cs",
               "RelativeDocumentMoniker": "POS_API\\Registration.cs",
@@ -598,7 +618,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 34,
               "Title": "EmailServiceImp.cs",
               "DocumentMoniker": "D:\\POS_System\\POS_API\\Services\\EmailService\\EmailServiceImp.cs",
               "RelativeDocumentMoniker": "POS_API\\Services\\EmailService\\EmailServiceImp.cs",
@@ -610,7 +630,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "EmailSender.cs",
               "DocumentMoniker": "D:\\POS_System\\POS_API\\Services\\EmailService\\EmailSender.cs",
               "RelativeDocumentMoniker": "POS_API\\Services\\EmailService\\EmailSender.cs",
@@ -622,7 +642,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 35,
               "Title": "EmailBackgroundService.cs",
               "DocumentMoniker": "D:\\POS_System\\POS_API\\Services\\EmailService\\EmailBackgroundService.cs",
               "RelativeDocumentMoniker": "POS_API\\Services\\EmailService\\EmailBackgroundService.cs",

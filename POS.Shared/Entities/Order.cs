@@ -18,7 +18,6 @@ namespace POS.Shared.Entities
         public string? CustomerPhoneNumber { get; set; }
 
         public int ShopId { get; set; }
-        public int StaffId { get; set; }
 
         public int Status { get; set; }
 
@@ -26,7 +25,7 @@ namespace POS.Shared.Entities
         public decimal TotalAmount { get; set; }
 
         public virtual Shop Shop { get; set; }
-        public virtual User Staff { get; set; }
+        public virtual User User { get; set; }
 
         public virtual ICollection<OrderDetail> OrderDetails { get; set; } = new List<OrderDetail>();
         public virtual ICollection<Payment> Payments { get; set; } = new List<Payment>();
