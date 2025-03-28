@@ -19,7 +19,7 @@ namespace POS.Shared.Entities
 
         public int ShopId { get; set; }
 
-        public int Status { get; set; }
+        public OrderStatus Status { get; set; }
 
         [Column(TypeName = "decimal(18,2)")]
         public decimal TotalAmount { get; set; }

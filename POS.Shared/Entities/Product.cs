@@ -13,9 +13,9 @@ namespace POS.Shared.Entities
 
         [Column(TypeName = "decimal(18,2)")]
         public decimal Price { get; set; }
-
         public int Stock { get; set; }
         public int ShopId { get; set; }
+        public bool isDeleted { get; set; } = false;
 
         public virtual Shop Shop { get; set; }
         public virtual ICollection<OrderDetail> OrderDetails { get; set; } = new List<OrderDetail>();

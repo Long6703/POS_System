@@ -11,8 +11,8 @@ namespace POS.Shared.Entities
 
         public Guid OrderId { get; set; }
 
-        public int PaymentMethod { get; set; }
-        public int Status { get; set; }
+        public PaymentMethod PaymentMethod { get; set; }
+        public OrderStatus Status { get; set; }
 
         public string? TransactionId { get; set; }
 

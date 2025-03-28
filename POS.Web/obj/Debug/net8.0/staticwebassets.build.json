@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "JynNyZrz5Bux+Lw+z0bjWRIqzhr2d5ImqW/OmrpQozA=",
+  "Hash": "3+p2ZpWNDdBlmi5ixJd/1Wk5on5RtS9t3rOKABs7i3A=",
   "Source": "POS.Web",
   "BasePath": "_content/POS.Web",
   "Mode": "Default",
@@ -495,7 +495,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 28 Mar 2025 15:17:10 GMT"
+          "Value": "Fri, 28 Mar 2025 23:51:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -532,7 +532,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 28 Mar 2025 15:17:10 GMT"
+          "Value": "Fri, 28 Mar 2025 23:51:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -577,7 +577,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 28 Mar 2025 15:17:10 GMT"
+          "Value": "Fri, 28 Mar 2025 23:51:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -622,7 +622,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 28 Mar 2025 15:17:10 GMT"
+          "Value": "Fri, 28 Mar 2025 23:51:29 GMT"
         },
         {
           "Name": "Cache-Control",

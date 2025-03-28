@@ -38,7 +38,7 @@ namespace POS_API.DatabaseContext
 
             modelBuilder.Entity<UserShop>()
                 .Property(us => us.Role)
-                .HasConversion<int>();
+                .HasConversion<string>();
 
             modelBuilder.Entity<OrderDetail>()
                 .HasKey(od => od.Id);
@@ -75,6 +75,18 @@ namespace POS_API.DatabaseContext
                 .WithMany(o => o.Payments)
                 .HasForeignKey(p => p.OrderId)
                 .OnDelete(DeleteBehavior.Cascade);
+
+            modelBuilder.Entity<Payment>()
+                .Property(us => us.Status)
+                .HasConversion<string>();
+
+            modelBuilder.Entity<Payment>()
+                .Property(us => us.PaymentMethod)
+                .HasConversion<string>();
+
+            modelBuilder.Entity<Order>()
+                .Property(us => us.Status)
+                .HasConversion<string>();
         }
     }
 }
