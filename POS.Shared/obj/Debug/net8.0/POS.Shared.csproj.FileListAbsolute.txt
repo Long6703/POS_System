@@ -1,0 +1,12 @@
+D:\POS_System\POS.Shared\bin\Debug\net8.0\POS.Shared.deps.json
+D:\POS_System\POS.Shared\bin\Debug\net8.0\POS.Shared.dll
+D:\POS_System\POS.Shared\bin\Debug\net8.0\POS.Shared.pdb
+D:\POS_System\POS.Shared\obj\Debug\net8.0\POS.Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\POS_System\POS.Shared\obj\Debug\net8.0\POS.Shared.AssemblyInfoInputs.cache
+D:\POS_System\POS.Shared\obj\Debug\net8.0\POS.Shared.AssemblyInfo.cs
+D:\POS_System\POS.Shared\obj\Debug\net8.0\POS.Shared.csproj.CoreCompileInputs.cache
+D:\POS_System\POS.Shared\obj\Debug\net8.0\POS.Shared.dll
+D:\POS_System\POS.Shared\obj\Debug\net8.0\refint\POS.Shared.dll
+D:\POS_System\POS.Shared\obj\Debug\net8.0\POS.Shared.pdb
+D:\POS_System\POS.Shared\obj\Debug\net8.0\ref\POS.Shared.dll
+D:\POS_System\POS.Shared\obj\Debug\net8.0\POS.Shared.csproj.AssemblyReference.cache
