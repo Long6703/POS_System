@@ -25,7 +25,7 @@ namespace POS_API.Services.Imp
         public async Task<string> Login(LoginRequest request)
         {
             var user = await _authRepository.Login(request);
-            if (user == null && !HashingService.VerifyHash(request.Password, user.PasswordHash))
+            if (user == null || !HashingService.VerifyHash(request.Password, user.PasswordHash))
             {
                 return string.Empty;
             }
