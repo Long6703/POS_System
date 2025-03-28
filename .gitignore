@@ -1,0 +1,49 @@
+# .NET Core/.NET 5+/.NET Framework/.NET Standard
+
+# Build results
+bin/
+obj/
+out/
+**/*.exe
+**/*.dll
+**/*.pdb
+**/*.nuget.*
+
+# User-specific files
+*.user
+*.suo
+*.vs/
+.vscode/
+
+# Logs and database
+logs/
+*.log
+*.mdf
+*.ldf
+
+# Environment and configuration
+.env
+secrets.json
+appsettings.*.json
+appsettings.Development.json
+
+# Dependency cache
+packages/
+**/node_modules/
+
+# IDE settings
+.idea/
+*.sln.cache
+*.sln.ide
+
+# Publish outputs
+publish/
+wwwroot/
+
+# Docker
+**/*.dockerignore
+docker-compose.override.yml
+
+# Other
+.DS_Store
+Thumbs.db
