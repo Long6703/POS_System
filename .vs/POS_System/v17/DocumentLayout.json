@@ -106,8 +106,7 @@
               "RelativeToolTip": "POS.Shared\\ResponseModel\\LoginResponse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T02:15:08.201Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-29T02:15:08.201Z"
             },
             {
               "$type": "Document",
@@ -117,7 +116,7 @@
               "RelativeDocumentMoniker": "POS.Web\\Services\\SessionService.cs",
               "ToolTip": "D:\\POS_System\\POS.Web\\Services\\SessionService.cs",
               "RelativeToolTip": "POS.Web\\Services\\SessionService.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAwwCYAAABCAAAAAAAAAA==",
+              "ViewState": "AgIAABQAAAAAAAAAAAAwwCoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-29T02:10:40.983Z",
               "EditorCaption": ""
@@ -132,8 +131,7 @@
               "RelativeToolTip": "POS.Web\\Services\\IService\\ISessionService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T02:10:07.747Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-29T02:10:07.747Z"
             },
             {
               "$type": "Document",
@@ -145,8 +143,7 @@
               "RelativeToolTip": "POS.Web\\Pages\\Auth\\Login.razor.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAABYAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T02:02:11.419Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-29T02:02:11.419Z"
             },
             {
               "$type": "Document",
@@ -158,8 +155,7 @@
               "RelativeToolTip": "POS_API\\Controllers\\AuthController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T01:55:35.164Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-29T01:55:35.164Z"
             },
             {
               "$type": "Document",
@@ -171,8 +167,7 @@
               "RelativeToolTip": "POS.Web\\Pages\\Auth\\Login.razor",
               "ViewState": "AgIAAAEAAAAAAAAAAAAmwAwAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-29T01:55:07.155Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-29T01:55:07.155Z"
             },
             {
               "$type": "Document",
@@ -184,8 +179,7 @@
               "RelativeToolTip": "POS.Web\\Middlewares\\ErrorHandlingMiddleware.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAACgAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T01:53:47.802Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-29T01:53:47.802Z"
             },
             {
               "$type": "Document",
@@ -197,8 +191,7 @@
               "RelativeToolTip": "POS.Web\\Exceptions\\ApiException.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T01:52:47.468Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-29T01:52:47.468Z"
             },
             {
               "$type": "Document",
@@ -210,8 +203,7 @@
               "RelativeToolTip": "POS_API\\Properties\\launchSettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-29T01:50:56.009Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-29T01:50:56.009Z"
             },
             {
               "$type": "Document",
@@ -223,8 +215,7 @@
               "RelativeToolTip": "POS.Web\\Services\\BaseApiService.cs",
               "ViewState": "AgIAACAAAAAAAAAAAAAwwDYAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T01:50:36.3Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-29T01:50:36.3Z"
             },
             {
               "$type": "Document",
@@ -260,8 +251,7 @@
               "RelativeToolTip": "POS.Web\\Pages\\Test.razor.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T01:44:20.907Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-29T01:44:20.907Z"
             },
             {
               "$type": "Document",
@@ -285,8 +275,7 @@
               "RelativeToolTip": "POS.Web\\Pages\\Index.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-29T01:43:24.782Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-29T01:43:24.782Z"
             },
             {
               "$type": "Document",
@@ -346,8 +335,7 @@
               "RelativeToolTip": "POS.Web\\Program.cs",
               "ViewState": "AgIAABEAAAAAAAAAAAAgwCsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T01:35:06.164Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-29T01:35:06.164Z"
             }
           ]
         }
