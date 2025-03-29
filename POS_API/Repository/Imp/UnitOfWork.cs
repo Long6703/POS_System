@@ -8,22 +8,35 @@ namespace POS_API.Repository.Imp
     public class UnitOfWork : IUnitOfWork
     {
         private readonly POSSystemDBContext _context;
-        public IGenericRepository<User> Users { get; }
-        public IGenericRepository<Product> Products { get; }
-        public IGenericRepository<Order> Orders { get; }
-        public IGenericRepository<OrderDetail> OrderDetails { get; }
-        public IGenericRepository<Payment> Payments { get; }
-        public IGenericRepository<Shop> Shops { get; }
+        public IUserRepository Users { get; }
+        public IProductRepository Products { get; }
+        public IOrderRepository Orders { get; }
+        public IOrderDetailRepository OrderDetails { get; }
+        public IPaymentRepository Payments { get; }
+        public IAuthRepository Auth { get; }
+        public IShopRepository Shops { get; }
+        public IUserShopRepository UserShops { get; }
 
-        public UnitOfWork(POSSystemDBContext context)
+        public UnitOfWork(
+            POSSystemDBContext context,
+            IUserRepository users,
+            IProductRepository products,
+            IOrderRepository orders,
+            IOrderDetailRepository orderDetails,
+            IPaymentRepository payments,
+            IAuthRepository auth,
+            IShopRepository shops,
+            IUserShopRepository userShops)
         {
             _context = context;
-            Users = new GenericRepository<User>(context);
-            Products = new GenericRepository<Product>(context);
-            Orders = new GenericRepository<Order>(context);
-            OrderDetails = new GenericRepository<OrderDetail>(context);
-            Payments = new GenericRepository<Payment>(context);
-            Shops = new GenericRepository<Shop>(context);
+            Users = users;
+            Products = products;
+            Orders = orders;
+            OrderDetails = orderDetails;
+            Payments = payments;
+            Auth = auth;
+            Shops = shops;
+            UserShops = userShops;
         }
 
         public async Task<int> CompleteAsync()

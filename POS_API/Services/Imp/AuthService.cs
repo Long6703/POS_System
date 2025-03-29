@@ -35,7 +35,7 @@ namespace POS_API.Services.Imp
             {
                 UserId = us.UserId,
                 ShopId = us.ShopId,
-                Role = us.Role
+                Role = us.Role.ToString()
             }).ToList();
 
             var token = _jwt.GenerateJwtToken(userDto);

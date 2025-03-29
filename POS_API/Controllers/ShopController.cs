@@ -8,7 +8,6 @@ namespace POS_API.Controllers
 {
     [Route("api/admin/shops")]
     [ApiController]
-    [Authorize(Roles = "Admin")]
     public class ShopController : ControllerBase
     {
         private readonly IShopService _shopService;
@@ -36,7 +35,11 @@ namespace POS_API.Controllers
             }
 
             var createdShop = await _shopService.CreateShopAsync(createShopDto);
-            return CreatedAtAction(nameof(GetShop), new { id = createdShop.Id }, createdShop);
+            if (!createdShop)
+            {
+                return BadRequest("Error");
+            }
+            return Ok("Create Done");
         }
 
 

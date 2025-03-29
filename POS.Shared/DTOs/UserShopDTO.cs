@@ -11,6 +11,6 @@ namespace POS.Shared.DTOs
     {
         public Guid UserId { get; set; }
         public int ShopId { get; set; }
-        public UserRole Role { get; set; }
+        public string Role { get; set; }
     }
 }

@@ -11,5 +11,8 @@ namespace POS.Shared.DTOs
         [Required(ErrorMessage = "Input required")]
         [StringLength(200, ErrorMessage = "Address cannot exceed 200 characters")]
         public string Address { get; set; }
+
+        [Required(ErrorMessage = "Input required")]
+        public Guid OwnerId { get; set; }
     }
 }

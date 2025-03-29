@@ -7,7 +7,7 @@ namespace POS_API.Services.IServices
     {
         Task<PagedResultDto<ShopDto>> GetShopsAsync(ShopSearchDto searchDto);
         Task<ShopDto> GetShopByIdAsync(int id);
-        Task<ShopDto> CreateShopAsync(CreateShopDto createShopDto);
+        Task<bool> CreateShopAsync(CreateShopDto createShopDto);
         Task<bool> UpdateShopAsync(int id, UpdateShopDto updateShopDto);
         Task<bool> DeleteShopAsync(int id);
     }

@@ -21,7 +21,7 @@ namespace POS_API.Services.Imp
 
         public async Task<PagedResultDto<ShopDto>> GetShopsAsync(ShopSearchDto searchDto)
         {
-            var shops = await _unitOfWork.Shops.GetAllAsync();
+            var shops = await _unitOfWork.Shops.GetShopsWithShopOwnerAsync();
             var query = shops.AsQueryable();
 
             // Apply filters
@@ -87,14 +87,24 @@ namespace POS_API.Services.Imp
             return _mapper.Map<ShopDto>(shop);
         }
 
-        public async Task<ShopDto> CreateShopAsync(CreateShopDto createShopDto)
+        public async Task<bool> CreateShopAsync(CreateShopDto createShopDto)
         {
             var shop = _mapper.Map<Shop>(createShopDto);
 
             await _unitOfWork.Shops.AddAsync(shop);
             await _unitOfWork.CompleteAsync();
 
-            return _mapper.Map<ShopDto>(shop);
+            var shopOwner = new UserShop
+            {
+                UserId = createShopDto.OwnerId,
+                ShopId = shop.Id,
+                Role = Enum.Enums.UserRole.ShopOwner
+            };
+
+            await _unitOfWork.UserShops.AddAsync(shopOwner);
+            await _unitOfWork.CompleteAsync();
+
+            return true;
         }
 
         public async Task<bool> UpdateShopAsync(int id, UpdateShopDto updateShopDto)
@@ -123,13 +133,7 @@ namespace POS_API.Services.Imp
                 return false;
             }
 
-            // Check if shop has any products or orders
-            if (shop.Products.Any() || shop.Orders.Any())
-            {
-                throw new InvalidOperationException("Không thể xóa cửa hàng đã có sản phẩm hoặc đơn hàng");
-            }
-
-            _unitOfWork.Shops.Remove(shop);
+            await _unitOfWork.Shops.UpdateDelete(shop.Id);
             await _unitOfWork.CompleteAsync();
 
             return true;
