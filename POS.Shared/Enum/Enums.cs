@@ -4,9 +4,9 @@
     {
         public enum UserRole
         {
-            ShopOwner = 0,
-            Manager = 1,
-            Staff = 2
+            ShopOwner,
+            Manager,
+            Staff
         }
 
         public enum OrderStatus

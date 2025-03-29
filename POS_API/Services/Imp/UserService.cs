@@ -24,7 +24,7 @@ namespace POS_API.Services.Imp
             var existingUser = (await _unitOfWork.Users.FindAsync(u => u.Email == createUserDto.Email && !u.isDeleted)).FirstOrDefault();
             if (existingUser != null)
             {
-                throw new InvalidOperationException("Email đã tồn tại trong hệ thống");
+                throw new InvalidOperationException("already exists");
             }
 
             var user = _mapper.Map<User>(createUserDto);
@@ -52,7 +52,6 @@ namespace POS_API.Services.Imp
                 .Where(u => !u.isDeleted)
                 .AsQueryable();
 
-            // Apply filters
             if (!string.IsNullOrWhiteSpace(searchDto.Name))
             {
                 query = query.Where(u => u.Name.Contains(searchDto.Name, StringComparison.OrdinalIgnoreCase));
@@ -68,10 +67,8 @@ namespace POS_API.Services.Imp
                 query = query.Where(u => u.IsAdmin == searchDto.IsAdmin.Value);
             }
 
-            // Get total count
             var totalCount = query.Count();
 
-            // Apply sorting
             if (!string.IsNullOrEmpty(searchDto.SortBy))
             {
                 switch (searchDto.SortBy.ToLower())
@@ -98,7 +95,6 @@ namespace POS_API.Services.Imp
                 query = query.OrderBy(u => u.Id);
             }
 
-            // Apply pagination
             var pagedUsers = query
                 .Skip((searchDto.PageNumber - 1) * searchDto.PageSize)
                 .Take(searchDto.PageSize)

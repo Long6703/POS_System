@@ -6,7 +6,7 @@ using POS.Shared.Entities;
 using POS_API.Repository.IRepository;
 using POS_API.Services.IServices;
 
-namespace POS_API.Services.Implementations
+namespace POS_API.Services.Imp
 {
     public class ShopService : IShopService
     {
@@ -133,11 +133,6 @@ namespace POS_API.Services.Implementations
             await _unitOfWork.CompleteAsync();
 
             return true;
-        }
-
-        public Task<bool> UpdateShopAsync(int id, PagedResultDto<T>.UpdateShopDto updateShopDto)
-        {
-            throw new NotImplementedException();
         }
     }
 }

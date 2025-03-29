@@ -26,6 +26,8 @@ namespace POS_API
 
             // Add services to the container.
             builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+            builder.Services.AddScoped<IUserService, UserService>();
+            builder.Services.AddScoped<IShopService, ShopService>();
             builder.Services.AddScoped<IAuthRepository, AutheRepository>();
             builder.Services.AddScoped<IAuthService, AuthService>();
             builder.Services.AddScoped<JwtHelper>();

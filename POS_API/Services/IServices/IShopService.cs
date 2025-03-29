@@ -1,6 +1,5 @@
 ﻿using POS.Shared.DTOs;
 using POS.Shared;
-using static POS.Shared.PagedResultDto<T>;
 
 namespace POS_API.Services.IServices
 {

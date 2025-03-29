@@ -1,7 +1,6 @@
 ﻿using AutoMapper;
 using POS.Shared.DTOs;
 using POS.Shared.Entities;
-using static POS.Shared.PagedResultDto<T>;
 
 namespace POS.Shared.MappingProfile
 {
