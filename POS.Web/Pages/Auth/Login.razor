@@ -1,0 +1,47 @@
+﻿@page "/login"
+@using POS.Web.Services
+@using POS.Web.Services.IService
+@inject NavigationManager Navigation
+@inject BaseApiService ApiService
+@inject ISessionService SessionService
+
+<h3>Login</h3>
+
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <EditForm Model="_loginRequest" OnValidSubmit="HandleLogin">
+                        <DataAnnotationsValidator />
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <InputText id="email" class="form-control" @bind-Value="_loginRequest.Email" />
+                            <ValidationMessage For="() => _loginRequest.Email" />
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <InputText id="password" class="form-control" type="password" @bind-Value="_loginRequest.Password" />
+                            <ValidationMessage For="() => _loginRequest.Password" />
+                        </div>
+
+                        <button type="submit" class="btn btn-primary w-100" disabled="@_isSubmitting">
+                            @(_isSubmitting ? "Logging in..." : "Login")
+                        </button>
+
+                        @if (!string.IsNullOrEmpty(_errorMessage))
+                        {
+                            <div class="alert alert-danger mt-3">@_errorMessage</div>
+                        }
+                    </EditForm>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+

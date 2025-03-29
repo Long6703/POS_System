@@ -1,11 +1,1428 @@
 {
   "version": 3,
   "targets": {
-    "net8.0": {}
+    "net8.0": {
+      "AntDesign/1.2.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.Web": "8.0.0",
+          "OneOf": "3.0.271"
+        },
+        "compile": {
+          "lib/net8.0/AntDesign.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/AntDesign.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/AntDesign.targets": {},
+          "buildTransitive/AntDesign.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/AntDesign.props": {}
+        }
+      },
+      "AutoMapper/14.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Options": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0/AutoMapper.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/AutoMapper.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Authentication.JwtBearer/8.0.13": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.IdentityModel.Protocols.OpenIdConnect": "7.1.2"
+        },
+        "compile": {
+          "lib/net8.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Microsoft.AspNetCore.Authorization/8.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Metadata": "8.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.0",
+          "Microsoft.Extensions.Options": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0/Microsoft.AspNetCore.Authorization.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.AspNetCore.Authorization.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Components/8.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Authorization": "8.0.0",
+          "Microsoft.AspNetCore.Components.Analyzers": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0/Microsoft.AspNetCore.Components.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.AspNetCore.Components.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Components.Analyzers/8.0.0": {
+        "type": "package",
+        "build": {
+          "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
+        }
+      },
+      "Microsoft.AspNetCore.Components.Forms/8.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0/Microsoft.AspNetCore.Components.Forms.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.AspNetCore.Components.Forms.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Components.Web/8.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "8.0.0",
+          "Microsoft.AspNetCore.Components.Forms": "8.0.0",
+          "Microsoft.Extensions.DependencyInjection": "8.0.0",
+          "Microsoft.Extensions.Primitives": "8.0.0",
+          "Microsoft.JSInterop": "8.0.0",
+          "System.IO.Pipelines": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0/Microsoft.AspNetCore.Components.Web.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.AspNetCore.Components.Web.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Metadata/8.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Microsoft.AspNetCore.Metadata.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.AspNetCore.Metadata.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection/8.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0/Microsoft.Extensions.DependencyInjection.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.DependencyInjection.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "Microsoft.Extensions.Logging.Abstractions/8.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0/Microsoft.Extensions.Logging.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.Logging.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/Microsoft.Extensions.Logging.Abstractions.targets": {}
+        }
+      },
+      "Microsoft.Extensions.Options/8.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0",
+          "Microsoft.Extensions.Primitives": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0/Microsoft.Extensions.Options.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.Options.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/Microsoft.Extensions.Options.targets": {}
+        }
+      },
+      "Microsoft.Extensions.Primitives/8.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Microsoft.Extensions.Primitives.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.Primitives.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "Microsoft.IdentityModel.Abstractions/7.1.2": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Microsoft.IdentityModel.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.IdentityModel.Abstractions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.IdentityModel.JsonWebTokens/7.1.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.IdentityModel.Tokens": "7.1.2"
+        },
+        "compile": {
+          "lib/net8.0/Microsoft.IdentityModel.JsonWebTokens.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.IdentityModel.JsonWebTokens.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.IdentityModel.Logging/7.1.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.IdentityModel.Abstractions": "7.1.2"
+        },
+        "compile": {
+          "lib/net8.0/Microsoft.IdentityModel.Logging.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.IdentityModel.Logging.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.IdentityModel.Protocols/7.1.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.IdentityModel.Logging": "7.1.2",
+          "Microsoft.IdentityModel.Tokens": "7.1.2"
+        },
+        "compile": {
+          "lib/net8.0/Microsoft.IdentityModel.Protocols.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.IdentityModel.Protocols.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.IdentityModel.Protocols.OpenIdConnect/7.1.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.IdentityModel.Protocols": "7.1.2",
+          "System.IdentityModel.Tokens.Jwt": "7.1.2"
+        },
+        "compile": {
+          "lib/net8.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.IdentityModel.Tokens/7.1.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.IdentityModel.Logging": "7.1.2"
+        },
+        "compile": {
+          "lib/net8.0/Microsoft.IdentityModel.Tokens.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.IdentityModel.Tokens.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.JSInterop/8.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Microsoft.JSInterop.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.JSInterop.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "OneOf/3.0.271": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/OneOf.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/OneOf.dll": {}
+        }
+      },
+      "System.IdentityModel.Tokens.Jwt/7.1.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.IdentityModel.JsonWebTokens": "7.1.2",
+          "Microsoft.IdentityModel.Tokens": "7.1.2"
+        },
+        "compile": {
+          "lib/net8.0/System.IdentityModel.Tokens.Jwt.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/System.IdentityModel.Tokens.Jwt.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.IO.Pipelines/8.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/System.IO.Pipelines.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/System.IO.Pipelines.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "POS.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "AutoMapper": "14.0.0"
+        },
+        "compile": {
+          "bin/placeholder/POS.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/POS.Shared.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "AntDesign/1.2.1": {
+      "sha512": "wRvggkZHbbjQ6fHPcIJrYmIzP/gr2FICCaADvowkwMLe1ILkPqDXPhsAJt0ewur2ldizpJEl4dMojln1rUrzaA==",
+      "type": "package",
+      "path": "antdesign/1.2.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "antdesign.1.2.1.nupkg.sha512",
+        "antdesign.nuspec",
+        "build/AntDesign.props",
+        "build/AntDesign.targets",
+        "build/Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "buildMultiTargeting/AntDesign.props",
+        "buildTransitive/AntDesign.props",
+        "content/LocalizedIntellisenseFiles/ja-JP/AntDesign.xml",
+        "content/LocalizedIntellisenseFiles/ko-KR/AntDesign.xml",
+        "content/LocalizedIntellisenseFiles/ru/AntDesign.xml",
+        "content/LocalizedIntellisenseFiles/zh-CN/AntDesign.xml",
+        "content/LocalizedIntellisenseFiles/zh-HK/AntDesign.xml",
+        "content/LocalizedIntellisenseFiles/zh-TW/AntDesign.xml",
+        "lib/net5.0/AntDesign.dll",
+        "lib/net5.0/AntDesign.xml",
+        "lib/net5.0/ja-JP/AntDesign.xml",
+        "lib/net5.0/ko-KR/AntDesign.xml",
+        "lib/net5.0/ru/AntDesign.xml",
+        "lib/net5.0/zh-CN/AntDesign.xml",
+        "lib/net5.0/zh-HK/AntDesign.xml",
+        "lib/net5.0/zh-TW/AntDesign.xml",
+        "lib/net6.0/AntDesign.dll",
+        "lib/net6.0/AntDesign.xml",
+        "lib/net6.0/ja-JP/AntDesign.xml",
+        "lib/net6.0/ko-KR/AntDesign.xml",
+        "lib/net6.0/ru/AntDesign.xml",
+        "lib/net6.0/zh-CN/AntDesign.xml",
+        "lib/net6.0/zh-HK/AntDesign.xml",
+        "lib/net6.0/zh-TW/AntDesign.xml",
+        "lib/net7.0/AntDesign.dll",
+        "lib/net7.0/AntDesign.xml",
+        "lib/net7.0/ja-JP/AntDesign.xml",
+        "lib/net7.0/ko-KR/AntDesign.xml",
+        "lib/net7.0/ru/AntDesign.xml",
+        "lib/net7.0/zh-CN/AntDesign.xml",
+        "lib/net7.0/zh-HK/AntDesign.xml",
+        "lib/net7.0/zh-TW/AntDesign.xml",
+        "lib/net8.0/AntDesign.dll",
+        "lib/net8.0/AntDesign.xml",
+        "lib/net8.0/ja-JP/AntDesign.xml",
+        "lib/net8.0/ko-KR/AntDesign.xml",
+        "lib/net8.0/ru/AntDesign.xml",
+        "lib/net8.0/zh-CN/AntDesign.xml",
+        "lib/net8.0/zh-HK/AntDesign.xml",
+        "lib/net8.0/zh-TW/AntDesign.xml",
+        "lib/net9.0/AntDesign.dll",
+        "lib/net9.0/AntDesign.xml",
+        "lib/netstandard2.1/AntDesign.dll",
+        "lib/netstandard2.1/AntDesign.xml",
+        "lib/netstandard2.1/ja-JP/AntDesign.xml",
+        "lib/netstandard2.1/ko-KR/AntDesign.xml",
+        "lib/netstandard2.1/ru/AntDesign.xml",
+        "lib/netstandard2.1/zh-CN/AntDesign.xml",
+        "lib/netstandard2.1/zh-HK/AntDesign.xml",
+        "lib/netstandard2.1/zh-TW/AntDesign.xml",
+        "logo.png",
+        "staticwebassets/AntDesign.d05dnpfa5s.lib.module.js",
+        "staticwebassets/css/ant-design-blazor.aliyun.css",
+        "staticwebassets/css/ant-design-blazor.aliyun.min.css",
+        "staticwebassets/css/ant-design-blazor.compact.css",
+        "staticwebassets/css/ant-design-blazor.compact.min.css",
+        "staticwebassets/css/ant-design-blazor.css",
+        "staticwebassets/css/ant-design-blazor.dark.css",
+        "staticwebassets/css/ant-design-blazor.dark.min.css",
+        "staticwebassets/css/ant-design-blazor.min.css",
+        "staticwebassets/css/ant-design-blazor.variable.css",
+        "staticwebassets/css/ant-design-blazor.variable.min.css",
+        "staticwebassets/js/ant-design-blazor.js",
+        "staticwebassets/js/ant-design-blazor.js.map",
+        "staticwebassets/less/affix/style/entry.less",
+        "staticwebassets/less/affix/style/index.less",
+        "staticwebassets/less/affix/style/patch.less",
+        "staticwebassets/less/alert/style/entry.less",
+        "staticwebassets/less/alert/style/index.less",
+        "staticwebassets/less/alert/style/patch.less",
+        "staticwebassets/less/alert/style/rtl.less",
+        "staticwebassets/less/anchor/style/entry.less",
+        "staticwebassets/less/anchor/style/index.less",
+        "staticwebassets/less/anchor/style/patch.less",
+        "staticwebassets/less/anchor/style/rtl.less",
+        "staticwebassets/less/ant-design-blazor.aliyun.less",
+        "staticwebassets/less/ant-design-blazor.compact.less",
+        "staticwebassets/less/ant-design-blazor.dark.less",
+        "staticwebassets/less/ant-design-blazor.less",
+        "staticwebassets/less/ant-design-blazor.variable.less",
+        "staticwebassets/less/auto-complete/style/entry.less",
+        "staticwebassets/less/auto-complete/style/index.less",
+        "staticwebassets/less/auto-complete/style/patch.less",
+        "staticwebassets/less/avatar/style/entry.less",
+        "staticwebassets/less/avatar/style/group.less",
+        "staticwebassets/less/avatar/style/index.less",
+        "staticwebassets/less/avatar/style/rtl.less",
+        "staticwebassets/less/back-top/style/entry.less",
+        "staticwebassets/less/back-top/style/index.less",
+        "staticwebassets/less/back-top/style/responsive.less",
+        "staticwebassets/less/badge/style/entry.less",
+        "staticwebassets/less/badge/style/index.less",
+        "staticwebassets/less/badge/style/patch.less",
+        "staticwebassets/less/badge/style/ribbon.less",
+        "staticwebassets/less/badge/style/rtl.less",
+        "staticwebassets/less/breadcrumb/style/entry.less",
+        "staticwebassets/less/breadcrumb/style/index.less",
+        "staticwebassets/less/breadcrumb/style/patch.less",
+        "staticwebassets/less/breadcrumb/style/rtl.less",
+        "staticwebassets/less/button/style/entry.less",
+        "staticwebassets/less/button/style/index.less",
+        "staticwebassets/less/button/style/mixin.less",
+        "staticwebassets/less/button/style/rtl.less",
+        "staticwebassets/less/button/style/space-compact.less",
+        "staticwebassets/less/calendar/style/entry.less",
+        "staticwebassets/less/calendar/style/index.less",
+        "staticwebassets/less/calendar/style/rtl.less",
+        "staticwebassets/less/card/style/entry.less",
+        "staticwebassets/less/card/style/index.less",
+        "staticwebassets/less/card/style/patch.less",
+        "staticwebassets/less/card/style/size.less",
+        "staticwebassets/less/carousel/style/entry.less",
+        "staticwebassets/less/carousel/style/index.less",
+        "staticwebassets/less/carousel/style/patch.less",
+        "staticwebassets/less/carousel/style/rtl.less",
+        "staticwebassets/less/cascader/style/entry.less",
+        "staticwebassets/less/cascader/style/index.less",
+        "staticwebassets/less/cascader/style/patch.less",
+        "staticwebassets/less/cascader/style/rtl.less",
+        "staticwebassets/less/checkbox/style/entry.less",
+        "staticwebassets/less/checkbox/style/index.less",
+        "staticwebassets/less/checkbox/style/mixin.less",
+        "staticwebassets/less/checkbox/style/patch.less",
+        "staticwebassets/less/checkbox/style/rtl.less",
+        "staticwebassets/less/collapse/style/entry.less",
+        "staticwebassets/less/collapse/style/index.less",
+        "staticwebassets/less/collapse/style/patch.less",
+        "staticwebassets/less/collapse/style/rtl.less",
+        "staticwebassets/less/comment/style/entry.less",
+        "staticwebassets/less/comment/style/index.less",
+        "staticwebassets/less/comment/style/patch.less",
+        "staticwebassets/less/comment/style/rtl.less",
+        "staticwebassets/less/components.less",
+        "staticwebassets/less/config-provider/style/entry.less",
+        "staticwebassets/less/config-provider/style/index.less",
+        "staticwebassets/less/date-picker/style/Calendar.less",
+        "staticwebassets/less/date-picker/style/DecadePanel.less",
+        "staticwebassets/less/date-picker/style/MonthPanel.less",
+        "staticwebassets/less/date-picker/style/MonthPicker.less",
+        "staticwebassets/less/date-picker/style/Picker.less",
+        "staticwebassets/less/date-picker/style/RangePicker.less",
+        "staticwebassets/less/date-picker/style/TimePicker.less",
+        "staticwebassets/less/date-picker/style/WeekPicker.less",
+        "staticwebassets/less/date-picker/style/YearPanel.less",
+        "staticwebassets/less/date-picker/style/entry.less",
+        "staticwebassets/less/date-picker/style/index.less",
+        "staticwebassets/less/date-picker/style/panel.less",
+        "staticwebassets/less/date-picker/style/patch.less",
+        "staticwebassets/less/date-picker/style/rtl.less",
+        "staticwebassets/less/date-picker/style/status.less",
+        "staticwebassets/less/descriptions/style/entry.less",
+        "staticwebassets/less/descriptions/style/index.less",
+        "staticwebassets/less/descriptions/style/patch.less",
+        "staticwebassets/less/descriptions/style/rtl.less",
+        "staticwebassets/less/divider/style/entry.less",
+        "staticwebassets/less/divider/style/index.less",
+        "staticwebassets/less/divider/style/rtl.less",
+        "staticwebassets/less/drawer/style/customize.less",
+        "staticwebassets/less/drawer/style/drawer.less",
+        "staticwebassets/less/drawer/style/entry.less",
+        "staticwebassets/less/drawer/style/index.less",
+        "staticwebassets/less/drawer/style/motion.less",
+        "staticwebassets/less/drawer/style/patch.less",
+        "staticwebassets/less/drawer/style/rtl.less",
+        "staticwebassets/less/dropdown/style/entry.less",
+        "staticwebassets/less/dropdown/style/index.less",
+        "staticwebassets/less/dropdown/style/patch.less",
+        "staticwebassets/less/dropdown/style/rtl.less",
+        "staticwebassets/less/dropdown/style/status.less",
+        "staticwebassets/less/empty/style/entry.less",
+        "staticwebassets/less/empty/style/index.less",
+        "staticwebassets/less/empty/style/patch.less",
+        "staticwebassets/less/empty/style/rtl.less",
+        "staticwebassets/less/flex/style/entry.less",
+        "staticwebassets/less/flex/style/index.less",
+        "staticwebassets/less/form/style/components.less",
+        "staticwebassets/less/form/style/entry.less",
+        "staticwebassets/less/form/style/horizontal.less",
+        "staticwebassets/less/form/style/index.less",
+        "staticwebassets/less/form/style/inline.less",
+        "staticwebassets/less/form/style/mixin.less",
+        "staticwebassets/less/form/style/patch.less",
+        "staticwebassets/less/form/style/rtl.less",
+        "staticwebassets/less/form/style/status.less",
+        "staticwebassets/less/form/style/vertical.less",
+        "staticwebassets/less/grid/style/entry.less",
+        "staticwebassets/less/grid/style/index.less",
+        "staticwebassets/less/grid/style/mixin.less",
+        "staticwebassets/less/grid/style/rtl.less",
+        "staticwebassets/less/icon/style/entry.less",
+        "staticwebassets/less/icon/style/index.less",
+        "staticwebassets/less/icon/style/patch.less",
+        "staticwebassets/less/image/style/entry.less",
+        "staticwebassets/less/image/style/index.less",
+        "staticwebassets/less/image/style/patch.less",
+        "staticwebassets/less/input-number/style/affix.less",
+        "staticwebassets/less/input-number/style/entry.less",
+        "staticwebassets/less/input-number/style/index.less",
+        "staticwebassets/less/input-number/style/rtl.less",
+        "staticwebassets/less/input-number/style/status.less",
+        "staticwebassets/less/input/style/IE11.less",
+        "staticwebassets/less/input/style/affix.less",
+        "staticwebassets/less/input/style/allow-clear.less",
+        "staticwebassets/less/input/style/entry.less",
+        "staticwebassets/less/input/style/index.less",
+        "staticwebassets/less/input/style/mixin.less",
+        "staticwebassets/less/input/style/patch.less",
+        "staticwebassets/less/input/style/rtl.less",
+        "staticwebassets/less/input/style/search-input.less",
+        "staticwebassets/less/input/style/status.less",
+        "staticwebassets/less/layout/style/entry.less",
+        "staticwebassets/less/layout/style/index.less",
+        "staticwebassets/less/layout/style/light.less",
+        "staticwebassets/less/layout/style/patch.less",
+        "staticwebassets/less/layout/style/rtl.less",
+        "staticwebassets/less/list/style/bordered.less",
+        "staticwebassets/less/list/style/customize.less",
+        "staticwebassets/less/list/style/entry.less",
+        "staticwebassets/less/list/style/index.less",
+        "staticwebassets/less/list/style/patch.less",
+        "staticwebassets/less/list/style/responsive.less",
+        "staticwebassets/less/list/style/rtl.less",
+        "staticwebassets/less/locale-provider/style/entry.less",
+        "staticwebassets/less/locale-provider/style/index.less",
+        "staticwebassets/less/mentions/style/entry.less",
+        "staticwebassets/less/mentions/style/index.less",
+        "staticwebassets/less/mentions/style/patch.less",
+        "staticwebassets/less/mentions/style/rtl.less",
+        "staticwebassets/less/mentions/style/status.less",
+        "staticwebassets/less/menu/style/dark.less",
+        "staticwebassets/less/menu/style/entry.less",
+        "staticwebassets/less/menu/style/index.less",
+        "staticwebassets/less/menu/style/light.less",
+        "staticwebassets/less/menu/style/patch.less",
+        "staticwebassets/less/menu/style/rtl.less",
+        "staticwebassets/less/menu/style/status.less",
+        "staticwebassets/less/message/style/entry.less",
+        "staticwebassets/less/message/style/index.less",
+        "staticwebassets/less/message/style/rtl.less",
+        "staticwebassets/less/modal/style/confirm.less",
+        "staticwebassets/less/modal/style/customize.less",
+        "staticwebassets/less/modal/style/entry.less",
+        "staticwebassets/less/modal/style/index.less",
+        "staticwebassets/less/modal/style/modal.less",
+        "staticwebassets/less/modal/style/patch.less",
+        "staticwebassets/less/modal/style/rtl.less",
+        "staticwebassets/less/notification/style/customize.less",
+        "staticwebassets/less/notification/style/entry.less",
+        "staticwebassets/less/notification/style/index.less",
+        "staticwebassets/less/notification/style/patch.less",
+        "staticwebassets/less/notification/style/placement.less",
+        "staticwebassets/less/notification/style/rtl.less",
+        "staticwebassets/less/page-header/style/entry.less",
+        "staticwebassets/less/page-header/style/index.less",
+        "staticwebassets/less/page-header/style/patch.less",
+        "staticwebassets/less/page-header/style/rtl.less",
+        "staticwebassets/less/pagination/style/entry.less",
+        "staticwebassets/less/pagination/style/index.less",
+        "staticwebassets/less/pagination/style/patch.less",
+        "staticwebassets/less/pagination/style/rtl.less",
+        "staticwebassets/less/popconfirm/style/entry.less",
+        "staticwebassets/less/popconfirm/style/index.less",
+        "staticwebassets/less/popconfirm/style/patch.less",
+        "staticwebassets/less/popover/style/customize.less",
+        "staticwebassets/less/popover/style/entry.less",
+        "staticwebassets/less/popover/style/index.less",
+        "staticwebassets/less/popover/style/patch.less",
+        "staticwebassets/less/popover/style/rtl.less",
+        "staticwebassets/less/progress/style/entry.less",
+        "staticwebassets/less/progress/style/index.less",
+        "staticwebassets/less/progress/style/patch.less",
+        "staticwebassets/less/progress/style/rtl.less",
+        "staticwebassets/less/radio/style/entry.less",
+        "staticwebassets/less/radio/style/index.less",
+        "staticwebassets/less/radio/style/patch.less",
+        "staticwebassets/less/radio/style/rtl.less",
+        "staticwebassets/less/rate/style/entry.less",
+        "staticwebassets/less/rate/style/index.less",
+        "staticwebassets/less/rate/style/rtl.less",
+        "staticwebassets/less/result/style/entry.less",
+        "staticwebassets/less/result/style/index.less",
+        "staticwebassets/less/result/style/patch.less",
+        "staticwebassets/less/result/style/rtl.less",
+        "staticwebassets/less/segmented/style/entry.less",
+        "staticwebassets/less/segmented/style/index.less",
+        "staticwebassets/less/segmented/style/mixins.less",
+        "staticwebassets/less/segmented/style/rtl.less",
+        "staticwebassets/less/select/style/entry.less",
+        "staticwebassets/less/select/style/index.less",
+        "staticwebassets/less/select/style/multiple.less",
+        "staticwebassets/less/select/style/patch.less",
+        "staticwebassets/less/select/style/rtl.less",
+        "staticwebassets/less/select/style/single.less",
+        "staticwebassets/less/select/style/status.less",
+        "staticwebassets/less/skeleton/style/entry.less",
+        "staticwebassets/less/skeleton/style/index.less",
+        "staticwebassets/less/skeleton/style/rtl.less",
+        "staticwebassets/less/slider/style/entry.less",
+        "staticwebassets/less/slider/style/index.less",
+        "staticwebassets/less/slider/style/rtl.less",
+        "staticwebassets/less/space/style/compact.less",
+        "staticwebassets/less/space/style/entry.less",
+        "staticwebassets/less/space/style/index.less",
+        "staticwebassets/less/space/style/patch.less",
+        "staticwebassets/less/space/style/rtl.less",
+        "staticwebassets/less/spin/style/entry.less",
+        "staticwebassets/less/spin/style/index.less",
+        "staticwebassets/less/spin/style/patch.less",
+        "staticwebassets/less/spin/style/rtl.less",
+        "staticwebassets/less/statistic/style/entry.less",
+        "staticwebassets/less/statistic/style/index.less",
+        "staticwebassets/less/statistic/style/rtl.less",
+        "staticwebassets/less/steps/style/compatibility.less",
+        "staticwebassets/less/steps/style/custom-icon.less",
+        "staticwebassets/less/steps/style/entry.less",
+        "staticwebassets/less/steps/style/index.less",
+        "staticwebassets/less/steps/style/label-placement.less",
+        "staticwebassets/less/steps/style/nav.less",
+        "staticwebassets/less/steps/style/progress-dot.less",
+        "staticwebassets/less/steps/style/progress.less",
+        "staticwebassets/less/steps/style/rtl.less",
+        "staticwebassets/less/steps/style/small.less",
+        "staticwebassets/less/steps/style/vertical.less",
+        "staticwebassets/less/style/aliyun.less",
+        "staticwebassets/less/style/color/bezierEasing.less",
+        "staticwebassets/less/style/color/colorPalette.less",
+        "staticwebassets/less/style/color/colors.less",
+        "staticwebassets/less/style/color/tinyColor.less",
+        "staticwebassets/less/style/compact.less",
+        "staticwebassets/less/style/core/base.less",
+        "staticwebassets/less/style/core/global.less",
+        "staticwebassets/less/style/core/iconfont.less",
+        "staticwebassets/less/style/core/index.less",
+        "staticwebassets/less/style/core/motion.less",
+        "staticwebassets/less/style/core/motion/fade.less",
+        "staticwebassets/less/style/core/motion/move.less",
+        "staticwebassets/less/style/core/motion/other.less",
+        "staticwebassets/less/style/core/motion/slide.less",
+        "staticwebassets/less/style/core/motion/swing.less",
+        "staticwebassets/less/style/core/motion/zoom.less",
+        "staticwebassets/less/style/dark.less",
+        "staticwebassets/less/style/default.less",
+        "staticwebassets/less/style/entry.less",
+        "staticwebassets/less/style/index.less",
+        "staticwebassets/less/style/mixins/box.less",
+        "staticwebassets/less/style/mixins/clearfix.less",
+        "staticwebassets/less/style/mixins/compact-item-vertical.less",
+        "staticwebassets/less/style/mixins/compact-item.less",
+        "staticwebassets/less/style/mixins/compatibility.less",
+        "staticwebassets/less/style/mixins/customize.less",
+        "staticwebassets/less/style/mixins/iconfont.less",
+        "staticwebassets/less/style/mixins/index.less",
+        "staticwebassets/less/style/mixins/modal-mask.less",
+        "staticwebassets/less/style/mixins/motion.less",
+        "staticwebassets/less/style/mixins/operation-unit.less",
+        "staticwebassets/less/style/mixins/reset.less",
+        "staticwebassets/less/style/mixins/rounded-arrow.less",
+        "staticwebassets/less/style/mixins/size.less",
+        "staticwebassets/less/style/mixins/typography.less",
+        "staticwebassets/less/style/patch.less",
+        "staticwebassets/less/style/themes/aliyun.less",
+        "staticwebassets/less/style/themes/compact.less",
+        "staticwebassets/less/style/themes/dark.less",
+        "staticwebassets/less/style/themes/default.less",
+        "staticwebassets/less/style/themes/index.less",
+        "staticwebassets/less/style/themes/variable.less",
+        "staticwebassets/less/style/v2-compatible-reset.less",
+        "staticwebassets/less/style/variable.less",
+        "staticwebassets/less/switch/style/entry.less",
+        "staticwebassets/less/switch/style/index.less",
+        "staticwebassets/less/switch/style/patch.less",
+        "staticwebassets/less/switch/style/rtl.less",
+        "staticwebassets/less/table/style/bordered.less",
+        "staticwebassets/less/table/style/entry.less",
+        "staticwebassets/less/table/style/index.less",
+        "staticwebassets/less/table/style/patch.less",
+        "staticwebassets/less/table/style/radius.less",
+        "staticwebassets/less/table/style/rtl.less",
+        "staticwebassets/less/table/style/size.less",
+        "staticwebassets/less/tabs/style/card-style.less",
+        "staticwebassets/less/tabs/style/card-style.rtl.less",
+        "staticwebassets/less/tabs/style/card.less",
+        "staticwebassets/less/tabs/style/dropdown.less",
+        "staticwebassets/less/tabs/style/entry.less",
+        "staticwebassets/less/tabs/style/index.less",
+        "staticwebassets/less/tabs/style/patch.less",
+        "staticwebassets/less/tabs/style/position.less",
+        "staticwebassets/less/tabs/style/rtl.less",
+        "staticwebassets/less/tabs/style/size.less",
+        "staticwebassets/less/tag/style/entry.less",
+        "staticwebassets/less/tag/style/index.less",
+        "staticwebassets/less/tag/style/patch.less",
+        "staticwebassets/less/tag/style/rtl.less",
+        "staticwebassets/less/time-picker/style/entry.less",
+        "staticwebassets/less/time-picker/style/index.less",
+        "staticwebassets/less/timeline/style/entry.less",
+        "staticwebassets/less/timeline/style/index.less",
+        "staticwebassets/less/timeline/style/rtl.less",
+        "staticwebassets/less/tooltip/style/entry.less",
+        "staticwebassets/less/tooltip/style/index.less",
+        "staticwebassets/less/tooltip/style/patch.less",
+        "staticwebassets/less/tooltip/style/rtl.less",
+        "staticwebassets/less/transfer/style/customize.less",
+        "staticwebassets/less/transfer/style/entry.less",
+        "staticwebassets/less/transfer/style/index.less",
+        "staticwebassets/less/transfer/style/rtl.less",
+        "staticwebassets/less/transfer/style/status.less",
+        "staticwebassets/less/tree-select/style/entry.less",
+        "staticwebassets/less/tree-select/style/index.less",
+        "staticwebassets/less/tree-select/style/patch.less",
+        "staticwebassets/less/tree/style/directory.less",
+        "staticwebassets/less/tree/style/entry.less",
+        "staticwebassets/less/tree/style/index.less",
+        "staticwebassets/less/tree/style/mixin.less",
+        "staticwebassets/less/tree/style/patch.less",
+        "staticwebassets/less/tree/style/rtl.less",
+        "staticwebassets/less/typography/style/entry.less",
+        "staticwebassets/less/typography/style/index.less",
+        "staticwebassets/less/typography/style/rtl.less",
+        "staticwebassets/less/upload/style/entry.less",
+        "staticwebassets/less/upload/style/index.less",
+        "staticwebassets/less/upload/style/patch.less",
+        "staticwebassets/less/upload/style/rtl.less"
+      ]
+    },
+    "AutoMapper/14.0.0": {
+      "sha512": "OC+1neAPM4oCCqQj3g2GJ2shziNNhOkxmNB9cVS8jtx4JbgmRzLcUOxB9Tsz6cVPHugdkHgCaCrTjjSI0Z5sCQ==",
+      "type": "package",
+      "path": "automapper/14.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "automapper.14.0.0.nupkg.sha512",
+        "automapper.nuspec",
+        "icon.png",
+        "lib/net8.0/AutoMapper.dll",
+        "lib/net8.0/AutoMapper.xml"
+      ]
+    },
+    "Microsoft.AspNetCore.Authentication.JwtBearer/8.0.13": {
+      "sha512": "EUNaX3F4fALAfvp7wsCqjqziu1lTNwYRFbIcVJEt6vInWxEpscAM/pcG6GBOx3WcmSRdB7sqtKAKSkyY6XhTig==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.authentication.jwtbearer/8.0.13",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net8.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll",
+        "lib/net8.0/Microsoft.AspNetCore.Authentication.JwtBearer.xml",
+        "microsoft.aspnetcore.authentication.jwtbearer.8.0.13.nupkg.sha512",
+        "microsoft.aspnetcore.authentication.jwtbearer.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Authorization/8.0.0": {
+      "sha512": "OGIGJMnlWvQgcweHcv1Mq/P24Zx/brUHeEdD05NzqkSXmQSnFomTvVyCuBtCXT4JPfv2m70y1RSocmd9bIbJRg==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.authorization/8.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net462/Microsoft.AspNetCore.Authorization.dll",
+        "lib/net462/Microsoft.AspNetCore.Authorization.xml",
+        "lib/net8.0/Microsoft.AspNetCore.Authorization.dll",
+        "lib/net8.0/Microsoft.AspNetCore.Authorization.xml",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Authorization.dll",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Authorization.xml",
+        "microsoft.aspnetcore.authorization.8.0.0.nupkg.sha512",
+        "microsoft.aspnetcore.authorization.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Components/8.0.0": {
+      "sha512": "kqspqWo3lT+rrSd39kvrV7SZYl0znYZQbQ8SJaHjDA8ffMPV6BkfVe0i6LvxRPwq/agwSWdIDq2j4x+78Frypg==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.components/8.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.txt",
+        "lib/net8.0/Microsoft.AspNetCore.Components.dll",
+        "lib/net8.0/Microsoft.AspNetCore.Components.xml",
+        "microsoft.aspnetcore.components.8.0.0.nupkg.sha512",
+        "microsoft.aspnetcore.components.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Components.Analyzers/8.0.0": {
+      "sha512": "lJMa9kQDw3vkqcMMbuicIpyax7QH6imQFbLRzVqJzrGs5LN954IPaJVkDzRCEXFVAN24Cml6g4mEF3b0D7Oa+Q==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.components.analyzers/8.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.txt",
+        "analyzers/dotnet/cs/Microsoft.AspNetCore.Components.Analyzers.dll",
+        "build/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets",
+        "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets",
+        "microsoft.aspnetcore.components.analyzers.8.0.0.nupkg.sha512",
+        "microsoft.aspnetcore.components.analyzers.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Components.Forms/8.0.0": {
+      "sha512": "iiYB/7Sl/vTURO4EiTUCmfIXujlJOl+Gh7nknCFhvFQ+kKMFFXYcrszYwLN9aQSolpswc/A9a78KL59/UIezig==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.components.forms/8.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.txt",
+        "lib/net8.0/Microsoft.AspNetCore.Components.Forms.dll",
+        "lib/net8.0/Microsoft.AspNetCore.Components.Forms.xml",
+        "microsoft.aspnetcore.components.forms.8.0.0.nupkg.sha512",
+        "microsoft.aspnetcore.components.forms.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Components.Web/8.0.0": {
+      "sha512": "aokUKvFoNqxR6bf0+iKrDfQ79OLHWYn5UGYp5MU65/il1vuRK7MAF18oGj7QgiZJUu3cMAZjCFkHbsWLhQxCsA==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.components.web/8.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.txt",
+        "lib/net8.0/Microsoft.AspNetCore.Components.Web.dll",
+        "lib/net8.0/Microsoft.AspNetCore.Components.Web.xml",
+        "microsoft.aspnetcore.components.web.8.0.0.nupkg.sha512",
+        "microsoft.aspnetcore.components.web.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Metadata/8.0.0": {
+      "sha512": "OmuSztiZMitRTYlbMNDkBk3BinSsVcOApSNBAsrw+KYNJh6ALarPhWLlKdtvMgrKzpyCY06xtLAjTmQLURHSlQ==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.metadata/8.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net462/Microsoft.AspNetCore.Metadata.dll",
+        "lib/net462/Microsoft.AspNetCore.Metadata.xml",
+        "lib/net8.0/Microsoft.AspNetCore.Metadata.dll",
+        "lib/net8.0/Microsoft.AspNetCore.Metadata.xml",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Metadata.dll",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Metadata.xml",
+        "microsoft.aspnetcore.metadata.8.0.0.nupkg.sha512",
+        "microsoft.aspnetcore.metadata.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.DependencyInjection/8.0.0": {
+      "sha512": "V8S3bsm50ig6JSyrbcJJ8bW2b9QLGouz+G1miK3UTaOWmMtFwNNNzUf4AleyDWUmTrWMLNnFSLEQtxmxgNQnNQ==",
+      "type": "package",
+      "path": "microsoft.extensions.dependencyinjection/8.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/Microsoft.Extensions.DependencyInjection.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/Microsoft.Extensions.DependencyInjection.targets",
+        "lib/net462/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/net462/Microsoft.Extensions.DependencyInjection.xml",
+        "lib/net6.0/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/net6.0/Microsoft.Extensions.DependencyInjection.xml",
+        "lib/net7.0/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/net7.0/Microsoft.Extensions.DependencyInjection.xml",
+        "lib/net8.0/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/net8.0/Microsoft.Extensions.DependencyInjection.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.xml",
+        "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.xml",
+        "microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.0": {
+      "sha512": "cjWrLkJXK0rs4zofsK4bSdg+jhDLTaxrkXu4gS6Y7MAlCvRyNNgwY/lJi5RDlQOnSZweHqoyvgvbdvQsRIW+hg==",
+      "type": "package",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/8.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/Microsoft.Extensions.DependencyInjection.Abstractions.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/Microsoft.Extensions.DependencyInjection.Abstractions.targets",
+        "lib/net462/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/net462/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "lib/net7.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/net7.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "lib/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.abstractions.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "Microsoft.Extensions.Logging.Abstractions/8.0.0": {
+      "sha512": "arDBqTgFCyS0EvRV7O3MZturChstm50OJ0y9bDJvAcmEPJm0FFpFyjU/JLYyStNGGey081DvnQYlncNX5SJJGA==",
+      "type": "package",
+      "path": "microsoft.extensions.logging.abstractions/8.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "analyzers/dotnet/roslyn3.11/cs/Microsoft.Extensions.Logging.Generators.dll",
+        "analyzers/dotnet/roslyn3.11/cs/cs/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/de/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/es/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/fr/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/it/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/ja/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/ko/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/pl/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/pt-BR/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/ru/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/tr/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/zh-Hans/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/zh-Hant/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/Microsoft.Extensions.Logging.Generators.dll",
+        "analyzers/dotnet/roslyn4.0/cs/cs/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/de/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/es/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/fr/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/it/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/ja/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/ko/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/pl/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/pt-BR/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/ru/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/tr/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/zh-Hans/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/zh-Hant/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/Microsoft.Extensions.Logging.Generators.dll",
+        "analyzers/dotnet/roslyn4.4/cs/cs/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/de/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/es/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/fr/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/it/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/ja/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/ko/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/pl/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/pt-BR/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/ru/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/tr/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/zh-Hans/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/zh-Hant/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "buildTransitive/net461/Microsoft.Extensions.Logging.Abstractions.targets",
+        "buildTransitive/net462/Microsoft.Extensions.Logging.Abstractions.targets",
+        "buildTransitive/net6.0/Microsoft.Extensions.Logging.Abstractions.targets",
+        "buildTransitive/netcoreapp2.0/Microsoft.Extensions.Logging.Abstractions.targets",
+        "buildTransitive/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.targets",
+        "lib/net462/Microsoft.Extensions.Logging.Abstractions.dll",
+        "lib/net462/Microsoft.Extensions.Logging.Abstractions.xml",
+        "lib/net6.0/Microsoft.Extensions.Logging.Abstractions.dll",
+        "lib/net6.0/Microsoft.Extensions.Logging.Abstractions.xml",
+        "lib/net7.0/Microsoft.Extensions.Logging.Abstractions.dll",
+        "lib/net7.0/Microsoft.Extensions.Logging.Abstractions.xml",
+        "lib/net8.0/Microsoft.Extensions.Logging.Abstractions.dll",
+        "lib/net8.0/Microsoft.Extensions.Logging.Abstractions.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.xml",
+        "microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
+        "microsoft.extensions.logging.abstractions.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "Microsoft.Extensions.Options/8.0.0": {
+      "sha512": "JOVOfqpnqlVLUzINQ2fox8evY2SKLYJ3BV8QDe/Jyp21u1T7r45x/R/5QdteURMR5r01GxeJSBBUOCOyaNXA3g==",
+      "type": "package",
+      "path": "microsoft.extensions.options/8.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "analyzers/dotnet/roslyn4.4/cs/Microsoft.Extensions.Options.SourceGeneration.dll",
+        "analyzers/dotnet/roslyn4.4/cs/cs/Microsoft.Extensions.Options.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/de/Microsoft.Extensions.Options.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/es/Microsoft.Extensions.Options.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/fr/Microsoft.Extensions.Options.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/it/Microsoft.Extensions.Options.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/ja/Microsoft.Extensions.Options.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/ko/Microsoft.Extensions.Options.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/pl/Microsoft.Extensions.Options.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/pt-BR/Microsoft.Extensions.Options.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/ru/Microsoft.Extensions.Options.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/tr/Microsoft.Extensions.Options.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/zh-Hans/Microsoft.Extensions.Options.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/zh-Hant/Microsoft.Extensions.Options.SourceGeneration.resources.dll",
+        "buildTransitive/net461/Microsoft.Extensions.Options.targets",
+        "buildTransitive/net462/Microsoft.Extensions.Options.targets",
+        "buildTransitive/net6.0/Microsoft.Extensions.Options.targets",
+        "buildTransitive/netcoreapp2.0/Microsoft.Extensions.Options.targets",
+        "buildTransitive/netstandard2.0/Microsoft.Extensions.Options.targets",
+        "lib/net462/Microsoft.Extensions.Options.dll",
+        "lib/net462/Microsoft.Extensions.Options.xml",
+        "lib/net6.0/Microsoft.Extensions.Options.dll",
+        "lib/net6.0/Microsoft.Extensions.Options.xml",
+        "lib/net7.0/Microsoft.Extensions.Options.dll",
+        "lib/net7.0/Microsoft.Extensions.Options.xml",
+        "lib/net8.0/Microsoft.Extensions.Options.dll",
+        "lib/net8.0/Microsoft.Extensions.Options.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Options.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Options.xml",
+        "lib/netstandard2.1/Microsoft.Extensions.Options.dll",
+        "lib/netstandard2.1/Microsoft.Extensions.Options.xml",
+        "microsoft.extensions.options.8.0.0.nupkg.sha512",
+        "microsoft.extensions.options.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "Microsoft.Extensions.Primitives/8.0.0": {
+      "sha512": "bXJEZrW9ny8vjMF1JV253WeLhpEVzFo1lyaZu1vQ4ZxWUlVvknZ/+ftFgVheLubb4eZPSwwxBeqS1JkCOjxd8g==",
+      "type": "package",
+      "path": "microsoft.extensions.primitives/8.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/Microsoft.Extensions.Primitives.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/Microsoft.Extensions.Primitives.targets",
+        "lib/net462/Microsoft.Extensions.Primitives.dll",
+        "lib/net462/Microsoft.Extensions.Primitives.xml",
+        "lib/net6.0/Microsoft.Extensions.Primitives.dll",
+        "lib/net6.0/Microsoft.Extensions.Primitives.xml",
+        "lib/net7.0/Microsoft.Extensions.Primitives.dll",
+        "lib/net7.0/Microsoft.Extensions.Primitives.xml",
+        "lib/net8.0/Microsoft.Extensions.Primitives.dll",
+        "lib/net8.0/Microsoft.Extensions.Primitives.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Primitives.xml",
+        "microsoft.extensions.primitives.8.0.0.nupkg.sha512",
+        "microsoft.extensions.primitives.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "Microsoft.IdentityModel.Abstractions/7.1.2": {
+      "sha512": "33eTIA2uO/L9utJjZWbKsMSVsQf7F8vtd6q5mQX7ZJzNvCpci5fleD6AeANGlbbb7WX7XKxq9+Dkb5e3GNDrmQ==",
+      "type": "package",
+      "path": "microsoft.identitymodel.abstractions/7.1.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net461/Microsoft.IdentityModel.Abstractions.dll",
+        "lib/net461/Microsoft.IdentityModel.Abstractions.xml",
+        "lib/net462/Microsoft.IdentityModel.Abstractions.dll",
+        "lib/net462/Microsoft.IdentityModel.Abstractions.xml",
+        "lib/net472/Microsoft.IdentityModel.Abstractions.dll",
+        "lib/net472/Microsoft.IdentityModel.Abstractions.xml",
+        "lib/net6.0/Microsoft.IdentityModel.Abstractions.dll",
+        "lib/net6.0/Microsoft.IdentityModel.Abstractions.xml",
+        "lib/net8.0/Microsoft.IdentityModel.Abstractions.dll",
+        "lib/net8.0/Microsoft.IdentityModel.Abstractions.xml",
+        "lib/netstandard2.0/Microsoft.IdentityModel.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.IdentityModel.Abstractions.xml",
+        "microsoft.identitymodel.abstractions.7.1.2.nupkg.sha512",
+        "microsoft.identitymodel.abstractions.nuspec"
+      ]
+    },
+    "Microsoft.IdentityModel.JsonWebTokens/7.1.2": {
+      "sha512": "cloLGeZolXbCJhJBc5OC05uhrdhdPL6MWHuVUnkkUvPDeK7HkwThBaLZ1XjBQVk9YhxXE2OvHXnKi0PLleXxDg==",
+      "type": "package",
+      "path": "microsoft.identitymodel.jsonwebtokens/7.1.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net461/Microsoft.IdentityModel.JsonWebTokens.dll",
+        "lib/net461/Microsoft.IdentityModel.JsonWebTokens.xml",
+        "lib/net462/Microsoft.IdentityModel.JsonWebTokens.dll",
+        "lib/net462/Microsoft.IdentityModel.JsonWebTokens.xml",
+        "lib/net472/Microsoft.IdentityModel.JsonWebTokens.dll",
+        "lib/net472/Microsoft.IdentityModel.JsonWebTokens.xml",
+        "lib/net6.0/Microsoft.IdentityModel.JsonWebTokens.dll",
+        "lib/net6.0/Microsoft.IdentityModel.JsonWebTokens.xml",
+        "lib/net8.0/Microsoft.IdentityModel.JsonWebTokens.dll",
+        "lib/net8.0/Microsoft.IdentityModel.JsonWebTokens.xml",
+        "lib/netstandard2.0/Microsoft.IdentityModel.JsonWebTokens.dll",
+        "lib/netstandard2.0/Microsoft.IdentityModel.JsonWebTokens.xml",
+        "microsoft.identitymodel.jsonwebtokens.7.1.2.nupkg.sha512",
+        "microsoft.identitymodel.jsonwebtokens.nuspec"
+      ]
+    },
+    "Microsoft.IdentityModel.Logging/7.1.2": {
+      "sha512": "YCxBt2EeJP8fcXk9desChkWI+0vFqFLvBwrz5hBMsoh0KJE6BC66DnzkdzkJNqMltLromc52dkdT206jJ38cTw==",
+      "type": "package",
+      "path": "microsoft.identitymodel.logging/7.1.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net461/Microsoft.IdentityModel.Logging.dll",
+        "lib/net461/Microsoft.IdentityModel.Logging.xml",
+        "lib/net462/Microsoft.IdentityModel.Logging.dll",
+        "lib/net462/Microsoft.IdentityModel.Logging.xml",
+        "lib/net472/Microsoft.IdentityModel.Logging.dll",
+        "lib/net472/Microsoft.IdentityModel.Logging.xml",
+        "lib/net6.0/Microsoft.IdentityModel.Logging.dll",
+        "lib/net6.0/Microsoft.IdentityModel.Logging.xml",
+        "lib/net8.0/Microsoft.IdentityModel.Logging.dll",
+        "lib/net8.0/Microsoft.IdentityModel.Logging.xml",
+        "lib/netstandard2.0/Microsoft.IdentityModel.Logging.dll",
+        "lib/netstandard2.0/Microsoft.IdentityModel.Logging.xml",
+        "microsoft.identitymodel.logging.7.1.2.nupkg.sha512",
+        "microsoft.identitymodel.logging.nuspec"
+      ]
+    },
+    "Microsoft.IdentityModel.Protocols/7.1.2": {
+      "sha512": "SydLwMRFx6EHPWJ+N6+MVaoArN1Htt92b935O3RUWPY1yUF63zEjvd3lBu79eWdZUwedP8TN2I5V9T3nackvIQ==",
+      "type": "package",
+      "path": "microsoft.identitymodel.protocols/7.1.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net461/Microsoft.IdentityModel.Protocols.dll",
+        "lib/net461/Microsoft.IdentityModel.Protocols.xml",
+        "lib/net462/Microsoft.IdentityModel.Protocols.dll",
+        "lib/net462/Microsoft.IdentityModel.Protocols.xml",
+        "lib/net472/Microsoft.IdentityModel.Protocols.dll",
+        "lib/net472/Microsoft.IdentityModel.Protocols.xml",
+        "lib/net6.0/Microsoft.IdentityModel.Protocols.dll",
+        "lib/net6.0/Microsoft.IdentityModel.Protocols.xml",
+        "lib/net8.0/Microsoft.IdentityModel.Protocols.dll",
+        "lib/net8.0/Microsoft.IdentityModel.Protocols.xml",
+        "lib/netstandard2.0/Microsoft.IdentityModel.Protocols.dll",
+        "lib/netstandard2.0/Microsoft.IdentityModel.Protocols.xml",
+        "microsoft.identitymodel.protocols.7.1.2.nupkg.sha512",
+        "microsoft.identitymodel.protocols.nuspec"
+      ]
+    },
+    "Microsoft.IdentityModel.Protocols.OpenIdConnect/7.1.2": {
+      "sha512": "6lHQoLXhnMQ42mGrfDkzbIOR3rzKM1W1tgTeMPLgLCqwwGw0d96xFi/UiX/fYsu7d6cD5MJiL3+4HuI8VU+sVQ==",
+      "type": "package",
+      "path": "microsoft.identitymodel.protocols.openidconnect/7.1.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net461/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll",
+        "lib/net461/Microsoft.IdentityModel.Protocols.OpenIdConnect.xml",
+        "lib/net462/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll",
+        "lib/net462/Microsoft.IdentityModel.Protocols.OpenIdConnect.xml",
+        "lib/net472/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll",
+        "lib/net472/Microsoft.IdentityModel.Protocols.OpenIdConnect.xml",
+        "lib/net6.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll",
+        "lib/net6.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.xml",
+        "lib/net8.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll",
+        "lib/net8.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.xml",
+        "lib/netstandard2.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll",
+        "lib/netstandard2.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.xml",
+        "microsoft.identitymodel.protocols.openidconnect.7.1.2.nupkg.sha512",
+        "microsoft.identitymodel.protocols.openidconnect.nuspec"
+      ]
+    },
+    "Microsoft.IdentityModel.Tokens/7.1.2": {
+      "sha512": "oICJMqr3aNEDZOwnH5SK49bR6Z4aX0zEAnOLuhloumOSuqnNq+GWBdQyrgILnlcT5xj09xKCP/7Y7gJYB+ls/g==",
+      "type": "package",
+      "path": "microsoft.identitymodel.tokens/7.1.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net461/Microsoft.IdentityModel.Tokens.dll",
+        "lib/net461/Microsoft.IdentityModel.Tokens.xml",
+        "lib/net462/Microsoft.IdentityModel.Tokens.dll",
+        "lib/net462/Microsoft.IdentityModel.Tokens.xml",
+        "lib/net472/Microsoft.IdentityModel.Tokens.dll",
+        "lib/net472/Microsoft.IdentityModel.Tokens.xml",
+        "lib/net6.0/Microsoft.IdentityModel.Tokens.dll",
+        "lib/net6.0/Microsoft.IdentityModel.Tokens.xml",
+        "lib/net8.0/Microsoft.IdentityModel.Tokens.dll",
+        "lib/net8.0/Microsoft.IdentityModel.Tokens.xml",
+        "lib/netstandard2.0/Microsoft.IdentityModel.Tokens.dll",
+        "lib/netstandard2.0/Microsoft.IdentityModel.Tokens.xml",
+        "microsoft.identitymodel.tokens.7.1.2.nupkg.sha512",
+        "microsoft.identitymodel.tokens.nuspec"
+      ]
+    },
+    "Microsoft.JSInterop/8.0.0": {
+      "sha512": "qQqASbHxWIddssdEBKUQ/49j21SEstiho6VAepPQa9eISLCBCE6wq0m3YaB6cpdF5U+AWX5F3FvDfmssql3xtw==",
+      "type": "package",
+      "path": "microsoft.jsinterop/8.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net8.0/Microsoft.JSInterop.dll",
+        "lib/net8.0/Microsoft.JSInterop.xml",
+        "microsoft.jsinterop.8.0.0.nupkg.sha512",
+        "microsoft.jsinterop.nuspec"
+      ]
+    },
+    "OneOf/3.0.271": {
+      "sha512": "pqpqeK8xQGggExhr4tesVgJkjdn+9HQAO0QgrYV2hFjE3y90okzk1kQMntMiUOGfV7FrCUfKPaVvPBD4IANqKg==",
+      "type": "package",
+      "path": "oneof/3.0.271",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net35/OneOf.dll",
+        "lib/net45/OneOf.dll",
+        "lib/netstandard1.3/OneOf.dll",
+        "lib/netstandard2.0/OneOf.dll",
+        "oneof.3.0.271.nupkg.sha512",
+        "oneof.nuspec"
+      ]
+    },
+    "System.IdentityModel.Tokens.Jwt/7.1.2": {
+      "sha512": "Thhbe1peAmtSBFaV/ohtykXiZSOkx59Da44hvtWfIMFofDA3M3LaVyjstACf2rKGn4dEDR2cUpRAZ0Xs/zB+7Q==",
+      "type": "package",
+      "path": "system.identitymodel.tokens.jwt/7.1.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net461/System.IdentityModel.Tokens.Jwt.dll",
+        "lib/net461/System.IdentityModel.Tokens.Jwt.xml",
+        "lib/net462/System.IdentityModel.Tokens.Jwt.dll",
+        "lib/net462/System.IdentityModel.Tokens.Jwt.xml",
+        "lib/net472/System.IdentityModel.Tokens.Jwt.dll",
+        "lib/net472/System.IdentityModel.Tokens.Jwt.xml",
+        "lib/net6.0/System.IdentityModel.Tokens.Jwt.dll",
+        "lib/net6.0/System.IdentityModel.Tokens.Jwt.xml",
+        "lib/net8.0/System.IdentityModel.Tokens.Jwt.dll",
+        "lib/net8.0/System.IdentityModel.Tokens.Jwt.xml",
+        "lib/netstandard2.0/System.IdentityModel.Tokens.Jwt.dll",
+        "lib/netstandard2.0/System.IdentityModel.Tokens.Jwt.xml",
+        "system.identitymodel.tokens.jwt.7.1.2.nupkg.sha512",
+        "system.identitymodel.tokens.jwt.nuspec"
+      ]
+    },
+    "System.IO.Pipelines/8.0.0": {
+      "sha512": "FHNOatmUq0sqJOkTx+UF/9YK1f180cnW5FVqnQMvYUN0elp6wFzbtPSiqbo1/ru8ICp43JM1i7kKkk6GsNGHlA==",
+      "type": "package",
+      "path": "system.io.pipelines/8.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.IO.Pipelines.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/System.IO.Pipelines.targets",
+        "lib/net462/System.IO.Pipelines.dll",
+        "lib/net462/System.IO.Pipelines.xml",
+        "lib/net6.0/System.IO.Pipelines.dll",
+        "lib/net6.0/System.IO.Pipelines.xml",
+        "lib/net7.0/System.IO.Pipelines.dll",
+        "lib/net7.0/System.IO.Pipelines.xml",
+        "lib/net8.0/System.IO.Pipelines.dll",
+        "lib/net8.0/System.IO.Pipelines.xml",
+        "lib/netstandard2.0/System.IO.Pipelines.dll",
+        "lib/netstandard2.0/System.IO.Pipelines.xml",
+        "system.io.pipelines.8.0.0.nupkg.sha512",
+        "system.io.pipelines.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "POS.Shared/1.0.0": {
+      "type": "project",
+      "path": "../POS.Shared/POS.Shared.csproj",
+      "msbuildProject": "../POS.Shared/POS.Shared.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net8.0": []
+    "net8.0": [
+      "AntDesign >= 1.2.1",
+      "AutoMapper >= 14.0.0",
+      "Microsoft.AspNetCore.Authentication.JwtBearer >= 8.0.13",
+      "POS.Shared >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\acer\\.nuget\\packages\\": {},
@@ -39,7 +1456,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\POS_System\\POS.Shared\\POS.Shared.csproj": {
+              "projectPath": "D:\\POS_System\\POS.Shared\\POS.Shared.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -57,6 +1478,20 @@
     "frameworks": {
       "net8.0": {
         "targetAlias": "net8.0",
+        "dependencies": {
+          "AntDesign": {
+            "target": "Package",
+            "version": "[1.2.1, )"
+          },
+          "AutoMapper": {
+            "target": "Package",
+            "version": "[14.0.0, )"
+          },
+          "Microsoft.AspNetCore.Authentication.JwtBearer": {
+            "target": "Package",
+            "version": "[8.0.13, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",
