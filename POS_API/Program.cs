@@ -25,11 +25,12 @@ namespace POS_API
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
+            builder.Services.AddScoped<IAuthRepository, AutheRepository>();
+            builder.Services.AddScoped<IUserRepository, UserRepository>();
             builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
             builder.Services.AddScoped<IUserService, UserService>();
-            builder.Services.AddScoped<IShopService, ShopService>();
-            builder.Services.AddScoped<IAuthRepository, AutheRepository>();
             builder.Services.AddScoped<IAuthService, AuthService>();
+            builder.Services.AddScoped<IShopService, ShopService>();
             builder.Services.AddScoped<JwtHelper>();
 
             builder.Services.AddDbContext<POSSystemDBContext>(options =>

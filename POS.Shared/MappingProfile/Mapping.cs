@@ -24,9 +24,6 @@ namespace POS.Shared.MappingProfile
             CreateMap<CreateUserDto, User>()
                 .ForMember(dest => dest.PasswordHash, opt => opt.Ignore());
 
-            CreateMap<UpdateUserDto, User>()
-                .ForMember(dest => dest.PasswordHash, opt => opt.Ignore());
-
             // UserShop mappings
             //CreateMap<UserShop, UserSearchDto>()
             //    .ForMember(dest => dest.Shop, opt => opt.MapFrom(src => src.Shop.Name));

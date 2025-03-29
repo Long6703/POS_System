@@ -41,9 +41,15 @@ namespace POS_API.Services.Imp
             throw new NotImplementedException();
         }
 
-        public Task<UserDTO> GetUserByIdAsync(Guid id)
+        public async Task<UserDTO> GetUserByIdAsync(Guid id)
         {
-            throw new NotImplementedException();
+            var user = (await _unitOfWork.Users.FindAsync(u => u.Id == id && !u.isDeleted)).FirstOrDefault();
+            if (user == null)
+            {
+                return null;
+            }
+
+            return _mapper.Map<UserDTO>(user);
         }
 
         public async Task<PagedResultDto<UserDTO>> GetUsersAsync(UserSearchDto searchDto)
@@ -105,40 +111,6 @@ namespace POS_API.Services.Imp
             return new PagedResultDto<UserDTO>(userDtos, totalCount, searchDto.PageNumber, searchDto.PageSize);
         }
 
-        public async Task<bool> UpdateUserAsync(Guid id, UpdateUserDto updateUserDto)
-        {
-            var user = (await _unitOfWork.Users.FindAsync(u => u.Id == id && !u.isDeleted)).FirstOrDefault();
-            if (user == null)
-            {
-                return false;
-            }
-
-            // Check if email exists for another user
-            if (user.Email != updateUserDto.Email)
-            {
-                var existingUser = (await _unitOfWork.Users.FindAsync(u => u.Email == updateUserDto.Email && !u.isDeleted)).FirstOrDefault();
-                if (existingUser != null)
-                {
-                    throw new InvalidOperationException("email exists");
-                }
-            }
-
-            // Update user properties
-            user.Name = updateUserDto.Name;
-            user.Email = updateUserDto.Email;
-            user.IsAdmin = updateUserDto.IsAdmin;
-
-            // Update password if provided
-            if (!string.IsNullOrEmpty(updateUserDto.Password))
-            {
-                user.PasswordHash = HashingService.Hash(updateUserDto.Password);
-            }
-
-            _unitOfWork.Users.Update(user);
-            await _unitOfWork.CompleteAsync();
-
-            return true;
-        }
 
         public async Task<bool> UpdateUserRolesAsync(Guid id, UpdateUserRolesDto updateRolesDto)
         {

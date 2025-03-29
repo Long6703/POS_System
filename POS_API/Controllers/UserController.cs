@@ -49,22 +49,6 @@ namespace POS_API.Controllers
             return Ok(user);
         }
 
-        [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateUser(Guid id, [FromBody] UpdateUserDto updateUserDto)
-        {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-
-            var result = await _userService.UpdateUserAsync(id, updateUserDto);
-            if (!result)
-            {
-                return NotFound();
-            }
-
-            return NoContent();
-        }
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteUser(Guid id)
