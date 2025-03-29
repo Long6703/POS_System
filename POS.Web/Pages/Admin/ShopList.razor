@@ -1,0 +1,48 @@
+﻿@page "/shops"
+@using POS.Shared.DTOs
+@using POS.Shared
+@using POS.Web.Services
+@using POS.Web.Services.IService
+@inject BaseApiService ApiService
+@layout MainLayout
+@inject AuthenticationStateProvider AuthProvider
+@inject NavigationManager Navigation
+
+<h3>Shop List</h3>
+
+<AuthorizeView Context="authContext">
+    <Authorized>
+    <div class="container mt-4">
+        <div class="row mb-3">
+            <div class="col-md-4">
+                <InputText @bind-Value="_searchDto.Name" class="form-control" placeholder="Search by name..." />
+            </div>
+            <div class="col-md-4">
+                <InputText @bind-Value="_searchDto.Address" class="form-control" placeholder="Search by address..." />
+            </div>
+            <div class="col-md-4">
+                <button class="btn btn-primary" @onclick="SearchShops">Search</button>
+            </div>
+        </div>
+
+        <AntDesign.Table TItem="ShopDto" DataSource="_shopList.Items" RowKey="@(s => s.Id)" Size="TableSize.Middle" Bordered="true" Context="rowContext">
+            <Columns>
+                <Column TItem="ShopDto" Title="ID" Field="@nameof(ShopDto.Id)" />
+                <Column TItem="ShopDto" Title="Name" Field="@nameof(ShopDto.Name)" />
+                <Column TItem="ShopDto" Title="Address" Field="@nameof(ShopDto.Address)" />
+                <Column TItem="ShopDto" Title="Products" Field="@nameof(ShopDto.ProductCount)" />
+                <Column TItem="ShopDto" Title="Users" Field="@nameof(ShopDto.UserCount)" />
+            </Columns>
+        </AntDesign.Table>
+
+        <div class="d-flex justify-content-between align-items-center mt-3">
+            <button class="btn btn-outline-primary" @onclick="PreviousPage" disabled="@(!_shopList.HasPrevious)">Previous</button>
+            <span>Page @_shopList.PageNumber of @_shopList.TotalPages</span>
+            <button class="btn btn-outline-primary" @onclick="NextPage" disabled="@(!_shopList.HasNext)">Next</button>
+        </div>
+    </div>
+    </Authorized>
+    <NotAuthorized>
+        <p>You Need Login.</p>
+    </NotAuthorized>
+</AuthorizeView>

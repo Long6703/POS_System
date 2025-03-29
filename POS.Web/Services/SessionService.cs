@@ -1,42 +1,45 @@
-﻿using POS.Web.Services.IService;
+﻿using Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage;
+using POS.Web.Services.IService;
 using System.Text.Json;
 
 namespace POS.Web.Services
 {
     public class SessionService : ISessionService
     {
-        private readonly IHttpContextAccessor _httpContextAccessor;
+        private readonly ProtectedSessionStorage _sessionStorage;
 
-        public SessionService(IHttpContextAccessor httpContextAccessor)
+        public SessionService(ProtectedSessionStorage sessionStorage)
         {
-            _httpContextAccessor = httpContextAccessor;
+            _sessionStorage = sessionStorage;
         }
 
-        public void SetString(string key, string value)
+        public async Task SetStringAsync(string key, string value)
         {
-            _httpContextAccessor.HttpContext?.Session.SetString(key, value);
+            await _sessionStorage.SetAsync(key, value);
         }
 
-        public string? GetString(string key)
+        public async Task<string?> GetStringAsync(string key)
         {
-            return _httpContextAccessor.HttpContext?.Session.GetString(key);
+            var result = await _sessionStorage.GetAsync<string>(key);
+            return result.Success ? result.Value : null;
         }
 
-        public void SetObject<T>(string key, T value)
+        public async Task SetObjectAsync<T>(string key, T value)
         {
             var json = JsonSerializer.Serialize(value);
-            _httpContextAccessor.HttpContext?.Session.SetString(key, json);
+            await _sessionStorage.SetAsync(key, json);
         }
 
-        public T? GetObject<T>(string key)
+        public async Task<T?> GetObjectAsync<T>(string key)
         {
-            var json = _httpContextAccessor.HttpContext?.Session.GetString(key);
-            return string.IsNullOrEmpty(json) ? default : JsonSerializer.Deserialize<T>(json);
+            var result = await _sessionStorage.GetAsync<string>(key);
+            return result.Success ? JsonSerializer.Deserialize<T>(result.Value!) : default;
         }
 
-        public void Remove(string key)
+        public async Task RemoveAsync(string key)
         {
-            _httpContextAccessor.HttpContext?.Session.Remove(key);
+            await _sessionStorage.DeleteAsync(key);
         }
     }
+
 }

@@ -48,7 +48,7 @@ namespace POS.Web.Services
 
         private async Task<T?> HandleResponse<T>(HttpResponseMessage response)
         {
-            string? token = _sessionService.GetString("AuthToken");
+            string? token = await _sessionService.GetStringAsync("AuthToken");
 
             if (!string.IsNullOrEmpty(token))
             {
