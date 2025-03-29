@@ -1,20 +1,21 @@
 ﻿using POS.Web.Exceptions;
-using POS.Web.Services.IService;
 using System.Net.Http.Headers;
 using System.Net.Http;
 using System.Text.Json;
+using Microsoft.AspNetCore.Components.Authorization;
+using static System.Net.WebRequestMethods;
 
 namespace POS.Web.Services
 {
     public class BaseApiService
     {
         private readonly HttpClient _httpClient;
-        private readonly ISessionService _sessionService;
+        private readonly AuthenticationStateProvider _authStateProvider;
 
-        public BaseApiService(HttpClient httpClient, ISessionService sessionService)
+        public BaseApiService(HttpClient httpClient, AuthenticationStateProvider authStateProvider)
         {
             _httpClient = httpClient;
-            _sessionService = sessionService;
+            _authStateProvider = authStateProvider;
         }
 
         private readonly JsonSerializerOptions _jsonOptions = new JsonSerializerOptions
@@ -48,12 +49,14 @@ namespace POS.Web.Services
 
         private async Task<T?> HandleResponse<T>(HttpResponseMessage response)
         {
-            string? token = await _sessionService.GetStringAsync("AuthToken");
 
-            if (!string.IsNullOrEmpty(token))
+            var authState = await _authStateProvider.GetAuthenticationStateAsync();
+            var user = authState.User;
+
+            if (user.Identity.IsAuthenticated)
             {
-                _httpClient.DefaultRequestHeaders.Authorization =
-                    new AuthenticationHeaderValue("Bearer", token);
+                var token = user.Claims.FirstOrDefault(c => c.Type == "token")?.Value;
+                _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
             }
 
             if (response.IsSuccessStatusCode)

@@ -115,7 +115,6 @@ namespace POS_API.Services.Imp
                 return false;
             }
 
-            // Update shop properties
             shop.Name = updateShopDto.Name;
             shop.Address = updateShopDto.Address;
 

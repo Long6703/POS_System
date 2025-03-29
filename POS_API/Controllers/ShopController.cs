@@ -6,7 +6,7 @@ using POS_API.Services.IServices;
 
 namespace POS_API.Controllers
 {
-    [Route("api/admin/shops")]
+    [Route("api/[controller]")]
     [ApiController]
     public class ShopController : ControllerBase
     {

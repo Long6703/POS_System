@@ -3,13 +3,11 @@ using POS.Shared.RequestModel;
 using POS.Shared.ResponseModel;
 using POS.Web.Exceptions;
 using POS.Web.Services;
-using POS.Web.Services.IService;
 
 namespace POS.Web.Pages.Auth
 {
     public partial class Login
     {
-        [Inject] private ISessionService SessionService { get; set; }
         private LoginRequest _loginRequest = new();
         private bool _isSubmitting = false;
         private string? _errorMessage;
@@ -23,7 +21,12 @@ namespace POS.Web.Pages.Auth
                 var response = await ApiService.PostAsync<LoginRequest, LoginResponse>("api/auth/login", _loginRequest);
                 if (response != null && !string.IsNullOrEmpty(response.Token))
                 {
-                    AuthStateProvider.SetAuthToken(response.Token);
+
+                    if (AuthStateProvider is CustomAuthStateProvider customAuth)
+                    {
+                        customAuth.SetUser(_loginRequest.Email, response.Token);
+                    }
+
                     Navigation.NavigateTo("/shops");
                 }
                 else
