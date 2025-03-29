@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "D:\\POS_System\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{6971A312-4778-4C0B-8F75-55139843EF89}|POS.Web\\POS.Web.csproj|d:\\pos_system\\pos.web\\services\\sessionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6971A312-4778-4C0B-8F75-55139843EF89}|POS.Web\\POS.Web.csproj|solutionrelative:pos.web\\services\\sessionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6971A312-4778-4C0B-8F75-55139843EF89}|POS.Web\\POS.Web.csproj|d:\\pos_system\\pos.web\\pages\\auth\\login.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6971A312-4778-4C0B-8F75-55139843EF89}|POS.Web\\POS.Web.csproj|solutionrelative:pos.web\\pages\\auth\\login.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6971A312-4778-4C0B-8F75-55139843EF89}|POS.Web\\POS.Web.csproj|d:\\pos_system\\pos.web\\services\\sessionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6971A312-4778-4C0B-8F75-55139843EF89}|POS.Web\\POS.Web.csproj|solutionrelative:pos.web\\services\\sessionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6971A312-4778-4C0B-8F75-55139843EF89}|POS.Web\\POS.Web.csproj|d:\\pos_system\\pos.web\\pages\\auth\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6971A312-4778-4C0B-8F75-55139843EF89}|POS.Web\\POS.Web.csproj|solutionrelative:pos.web\\pages\\auth\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6971A312-4778-4C0B-8F75-55139843EF89}|POS.Web\\POS.Web.csproj|d:\\pos_system\\pos.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -21,10 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{6971A312-4778-4C0B-8F75-55139843EF89}|POS.Web\\POS.Web.csproj|d:\\pos_system\\pos.web\\services\\baseapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6971A312-4778-4C0B-8F75-55139843EF89}|POS.Web\\POS.Web.csproj|solutionrelative:pos.web\\services\\baseapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6971A312-4778-4C0B-8F75-55139843EF89}|POS.Web\\POS.Web.csproj|d:\\pos_system\\pos.web\\pages\\auth\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6971A312-4778-4C0B-8F75-55139843EF89}|POS.Web\\POS.Web.csproj|solutionrelative:pos.web\\pages\\auth\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3C7F5925-A442-484D-9B8C-7734C92AE7B4}|POS.Shared\\POS.Shared.csproj|d:\\pos_system\\pos.shared\\responsemodel\\loginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -90,7 +90,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -111,20 +111,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "SessionService.cs",
               "DocumentMoniker": "D:\\POS_System\\POS.Web\\Services\\SessionService.cs",
               "RelativeDocumentMoniker": "POS.Web\\Services\\SessionService.cs",
               "ToolTip": "D:\\POS_System\\POS.Web\\Services\\SessionService.cs",
               "RelativeToolTip": "POS.Web\\Services\\SessionService.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAQwBAAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-29T02:10:40.983Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "ISessionService.cs",
               "DocumentMoniker": "D:\\POS_System\\POS.Web\\Services\\IService\\ISessionService.cs",
               "RelativeDocumentMoniker": "POS.Web\\Services\\IService\\ISessionService.cs",
@@ -137,13 +137,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Login.razor.cs",
               "DocumentMoniker": "D:\\POS_System\\POS.Web\\Pages\\Auth\\Login.razor.cs",
               "RelativeDocumentMoniker": "POS.Web\\Pages\\Auth\\Login.razor.cs",
               "ToolTip": "D:\\POS_System\\POS.Web\\Pages\\Auth\\Login.razor.cs",
               "RelativeToolTip": "POS.Web\\Pages\\Auth\\Login.razor.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAApwBcAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABYAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-29T02:02:11.419Z",
               "EditorCaption": ""
@@ -163,13 +163,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "Login.razor",
               "DocumentMoniker": "D:\\POS_System\\POS.Web\\Pages\\Auth\\Login.razor",
               "RelativeDocumentMoniker": "POS.Web\\Pages\\Auth\\Login.razor",
               "ToolTip": "D:\\POS_System\\POS.Web\\Pages\\Auth\\Login.razor",
               "RelativeToolTip": "POS.Web\\Pages\\Auth\\Login.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAmwAwAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-03-29T01:55:07.155Z",
               "EditorCaption": ""
@@ -215,7 +215,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "BaseApiService.cs",
               "DocumentMoniker": "D:\\POS_System\\POS.Web\\Services\\BaseApiService.cs",
               "RelativeDocumentMoniker": "POS.Web\\Services\\BaseApiService.cs",
@@ -338,7 +338,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\POS_System\\POS.Web\\Program.cs",
               "RelativeDocumentMoniker": "POS.Web\\Program.cs",

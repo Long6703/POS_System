@@ -1,12 +1,15 @@
+using Microsoft.AspNetCore.Components;
 using POS.Shared.RequestModel;
 using POS.Shared.ResponseModel;
 using POS.Web.Exceptions;
 using POS.Web.Services;
+using POS.Web.Services.IService;
 
 namespace POS.Web.Pages.Auth
 {
     public partial class Login
     {
+        [Inject] private ISessionService SessionService { get; set; }
         private LoginRequest _loginRequest = new();
         private bool _isSubmitting = false;
         private string? _errorMessage;
@@ -21,6 +24,7 @@ namespace POS.Web.Pages.Auth
                 if (response != null && !string.IsNullOrEmpty(response.Token))
                 {
                     SessionService.SetString("AuthToken", response.Token);
+                    Navigation.NavigateTo("/");
                 }
                 else
                 {
@@ -34,7 +38,6 @@ namespace POS.Web.Pages.Auth
             finally
             {
                 _isSubmitting = false;
-                Navigation.NavigateTo("/");
             }
         }
     }
