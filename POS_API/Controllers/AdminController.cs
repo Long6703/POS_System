@@ -8,6 +8,7 @@ namespace POS_API.Controllers
 {
     [Route("api/admin/users")]
     [ApiController]
+    [Authorize(Roles = "Admin")]
     public class AdminController : ControllerBase
     {
         private readonly IUserService _userService;

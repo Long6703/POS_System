@@ -1,5 +1,6 @@
 ﻿using Microsoft.IdentityModel.Tokens;
 using POS.Shared.DTOs;
+using POS.Shared.Entities;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
@@ -24,15 +25,18 @@ namespace eStoreAPI.Helper
                 new Claim(ClaimTypes.NameIdentifier, userDTO.Id.ToString()),
                 new Claim(ClaimTypes.Name, userDTO.Name),
                 new Claim(ClaimTypes.Email, userDTO.Email),
-                new Claim(ClaimTypes.Role, userDTO.IsAdmin ? "Admin" : "User")
             };
 
-            if (userDTO.UserShops.Any())
+            if (userDTO.IsAdmin)
+            {
+                claims.Add(new Claim(ClaimTypes.Role, "Admin"));
+            }
+
+            if (userDTO.UserShops.Count != 0)
             {
                 foreach (var userShop in userDTO.UserShops)
                 {
-                    claims.Add(new Claim("ShopId", userShop.ShopId.ToString()));
-                    claims.Add(new Claim("UserRole", userShop.Role.ToString()));
+                    claims.Add(new Claim("ShopId-Role", userShop.ShopId.ToString() + "-" + userShop.Role.ToString()));
                 }
             }
 

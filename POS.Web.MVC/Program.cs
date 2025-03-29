@@ -25,6 +25,7 @@ namespace POS.Web.MVC
             });
             builder.Services.AddSingleton<ISessionService, SessionService>();
             builder.Services.AddScoped<IAuthService, AuthService>();
+            builder.Services.AddScoped<IShopService, ShopService>();
 
             var app = builder.Build();
 

@@ -19,6 +19,7 @@ namespace POS_API.Controllers
 
 
         [HttpGet]
+        [Authorize(Roles = "Admin")]
         public async Task<ActionResult<PagedResultDto<ShopDto>>> GetShops([FromQuery] ShopSearchDto searchDto)
         {
             var shops = await _shopService.GetShopsAsync(searchDto);
