@@ -6,52 +6,30 @@ namespace POS.Web.Services
 {
     public class CustomAuthStateProvider : AuthenticationStateProvider
     {
-        private readonly IHttpContextAccessor _httpContextAccessor;
+        private ClaimsPrincipal _currentUser = new(new ClaimsIdentity());
 
-        public CustomAuthStateProvider(IHttpContextAccessor httpContextAccessor)
-        {
-            _httpContextAccessor = httpContextAccessor;
-        }
         public override Task<AuthenticationState> GetAuthenticationStateAsync()
         {
-            var token = _httpContextAccessor.HttpContext?.Session.GetString("AuthToken");
+            return Task.FromResult(new AuthenticationState(_currentUser));
+        }
 
-            if (string.IsNullOrEmpty(token))
-            {
-                var anonymous = new ClaimsIdentity();
-                return Task.FromResult(new AuthenticationState(new ClaimsPrincipal(anonymous)));
-            }
+        public void SetUser(string email, string token)
+        {
+            var claims = new List<Claim>
+        {
+            new Claim(ClaimTypes.Name, email),
+            new Claim("token", token)
+        };
 
-            var claims = ParseClaimsFromToken(token);
             var identity = new ClaimsIdentity(claims, "CustomAuth");
-            var user = new ClaimsPrincipal(identity);
+            _currentUser = new ClaimsPrincipal(identity);
 
-            return Task.FromResult(new AuthenticationState(user));
-        }
-
-        public void SetAuthToken(string token)
-        {
-            if (_httpContextAccessor.HttpContext == null)
-            {
-                throw new InvalidOperationException("HttpContext is not available.");
-            }
-
-            _httpContextAccessor.HttpContext.Session.SetString("AuthToken", token);
             NotifyAuthenticationStateChanged(GetAuthenticationStateAsync());
         }
-
-        public void ClearAuthToken()
+        public void Logout()
         {
-            _httpContextAccessor.HttpContext?.Session.Remove("AuthToken");
+            _currentUser = new ClaimsPrincipal(new ClaimsIdentity());
             NotifyAuthenticationStateChanged(GetAuthenticationStateAsync());
-        }
-
-        private IEnumerable<Claim> ParseClaimsFromToken(string token)
-        {
-            var handler = new JwtSecurityTokenHandler();
-            var jwtToken = handler.ReadJwtToken(token);
-
-            return jwtToken.Claims;
         }
     }
 }

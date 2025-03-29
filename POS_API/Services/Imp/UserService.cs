@@ -12,23 +12,39 @@ namespace POS_API.Services.Imp
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
+        private readonly IEmailService _emailService;
 
-        public UserService(IUnitOfWork unitOfWork, IMapper mapper)
+        public UserService(IUnitOfWork unitOfWork, IMapper mapper, IEmailService emailService)
         {
             _unitOfWork = unitOfWork;
             _mapper = mapper;
+            _emailService = emailService;
         }
         public async Task<UserDTO> CreateUserAsync(CreateUserDto createUserDto)
         {
-            // Check if email already exists
             var existingUser = (await _unitOfWork.Users.FindAsync(u => u.Email == createUserDto.Email && !u.isDeleted)).FirstOrDefault();
             if (existingUser != null)
             {
-                throw new InvalidOperationException("already exists");
+                return null;
             }
 
             var user = _mapper.Map<User>(createUserDto);
-            user.PasswordHash = HashingService.Hash(createUserDto.Password);
+            string password = GenerateRandomString(8);
+            user.PasswordHash = HashingService.Hash(password);
+
+            string emailContent = $@"
+                <p>Hello,</p>
+                <p>Your account has been successfully created.</p>
+                <p><strong>Email:</strong> {user.Email}</p>
+                <p><strong>Password:</strong> {password}</p>
+                <p>Please log in and change your password.</p>";
+
+            await _emailService.QueueEmailAsync(
+                user.Email,
+                "Account Information",
+                emailContent,
+                true
+            );
 
             await _unitOfWork.Users.AddAsync(user);
             await _unitOfWork.CompleteAsync();
@@ -36,20 +52,26 @@ namespace POS_API.Services.Imp
             return _mapper.Map<UserDTO>(user);
         }
 
-        public Task<bool> DeleteUserAsync(Guid id)
+        public async Task<bool> DeleteUserAsync(Guid id)
         {
-            throw new NotImplementedException();
+            var user = (await _unitOfWork.Users.FindAsync(u => u.Id == id && !u.isDeleted)).FirstOrDefault();
+            if (user == null)
+            {
+                return false;
+            }
+            await _unitOfWork.CompleteAsync();
+            return true;
         }
 
         public async Task<UserDTO> GetUserByIdAsync(Guid id)
         {
-            var user = (await _unitOfWork.Users.FindAsync(u => u.Id == id && !u.isDeleted)).FirstOrDefault();
+            var user = (await _unitOfWork.Users.GetUserByIdWithShopAsync(id));
             if (user == null)
             {
                 return null;
             }
 
-            return _mapper.Map<UserDTO>(user);
+            return user;
         }
 
         public async Task<PagedResultDto<UserDTO>> GetUsersAsync(UserSearchDto searchDto)
@@ -112,58 +134,24 @@ namespace POS_API.Services.Imp
         }
 
 
-        public async Task<bool> UpdateUserRolesAsync(Guid id, UpdateUserRolesDto updateRolesDto)
+        public async Task<bool> UpdateUserRolesAsync(UpdateUserRolesDto updateRolesDto)
         {
-            var user = (await _unitOfWork.Users.FindAsync(u => u.Id == id && !u.isDeleted)).FirstOrDefault();
-            if (user == null)
+            var result = await _unitOfWork.Users.UpdateRoleInShop(updateRolesDto);
+            if (!result)
             {
                 return false;
             }
-
-            // Get user with UserShops
-            if (user.UserShops == null)
-            {
-                // Find the user with the included UserShops
-                user = (await _unitOfWork.Users.FindAsync(u => u.Id == id)).FirstOrDefault();
-                if (user == null || user.UserShops == null)
-                {
-                    return false;
-                }
-            }
-
-            // Get all shop IDs from the DTO
-            var shopIds = updateRolesDto.ShopRoles.Select(r => r.ShopId).ToList();
-
-            // Remove user from shops not in the update list
-            var shopsToRemove = user.UserShops.Where(us => !shopIds.Contains(us.ShopId)).ToList();
-            foreach (var shopToRemove in shopsToRemove)
-            {
-                user.UserShops.Remove(shopToRemove);
-            }
-
-            // Update roles for existing shops or add new ones
-            foreach (var shopRole in updateRolesDto.ShopRoles)
-            {
-                var existingUserShop = user.UserShops.FirstOrDefault(us => us.ShopId == shopRole.ShopId);
-                if (existingUserShop != null)
-                {
-                    // Update role
-                    existingUserShop.Role = shopRole.Role;
-                }
-                else
-                {
-                    // Add new UserShop
-                    user.UserShops.Add(new UserShop
-                    {
-                        UserId = user.Id,
-                        ShopId = shopRole.ShopId,
-                        Role = shopRole.Role
-                    });
-                }
-            }
-
             await _unitOfWork.CompleteAsync();
             return true;
         }
+
+        private static string GenerateRandomString(int length)
+        {
+            const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+            var random = new Random();
+            return new string(Enumerable.Repeat(chars, length)
+                .Select(s => s[random.Next(s.Length)]).ToArray());
+        }
     }
+
 }

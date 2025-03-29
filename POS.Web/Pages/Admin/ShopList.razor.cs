@@ -1,8 +1,5 @@
-using Microsoft.AspNetCore.Components;
 using POS.Shared;
 using POS.Shared.DTOs;
-using POS.Web.Services;
-using System.Threading.Tasks;
 
 namespace POS.Web.Pages.Admin
 {
@@ -19,13 +16,29 @@ namespace POS.Web.Pages.Admin
             if (!user.Identity.IsAuthenticated)
             {
                 Navigation.NavigateTo("/login");
+                return;
             }
+
             await LoadShops();
         }
 
         private async Task LoadShops()
         {
-            var result = await ApiService.GetAsync<PagedResultDto<ShopDto>>($"api/shops?Name={_searchDto.Name}&Address={_searchDto.Address}&PageNumber={_searchDto.PageNumber}&PageSize={_searchDto.PageSize}");
+            var queryParams = new List<string>
+            {
+                $"PageNumber={_searchDto.PageNumber}",
+                $"PageSize={_searchDto.PageSize}"
+            };
+
+            if (!string.IsNullOrEmpty(_searchDto.Name))
+                queryParams.Add($"Name={Uri.EscapeDataString(_searchDto.Name)}");
+
+            if (!string.IsNullOrEmpty(_searchDto.Address))
+                queryParams.Add($"Address={Uri.EscapeDataString(_searchDto.Address)}");
+
+            var url = $"api/shop?{string.Join("&", queryParams)}";
+
+            var result = await ApiService.GetAsync<PagedResultDto<ShopDto>>(url);
             if (result != null)
             {
                 _shopList = result;

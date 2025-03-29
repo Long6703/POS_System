@@ -9,6 +9,6 @@ namespace POS_API.Services.IServices
         Task<UserDTO> GetUserByIdAsync(Guid id);
         Task<UserDTO> CreateUserAsync(CreateUserDto createUserDto);
         Task<bool> DeleteUserAsync(Guid id);
-        Task<bool> UpdateUserRolesAsync(Guid id, UpdateUserRolesDto updateRolesDto);
+        Task<bool> UpdateUserRolesAsync(UpdateUserRolesDto updateRolesDto);
     }
 }

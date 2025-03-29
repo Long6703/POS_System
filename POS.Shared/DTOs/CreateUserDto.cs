@@ -9,18 +9,12 @@ namespace POS.Shared.DTOs
 {
     public class CreateUserDto
     {
-        [Required(ErrorMessage = "Email là bắt buộc")]
-        [EmailAddress(ErrorMessage = "Email không hợp lệ")]
+        [Required(ErrorMessage = "Email is required")]
+        [EmailAddress(ErrorMessage = "Invalid email format")]
         public string Email { get; set; }
 
-        [Required(ErrorMessage = "Tên người dùng là bắt buộc")]
-        [StringLength(100, ErrorMessage = "Tên người dùng không được vượt quá 100 ký tự")]
+        [Required(ErrorMessage = "Username is required")]
+        [StringLength(100, ErrorMessage = "Username must not exceed 100 characters")]
         public string Name { get; set; }
-
-        [Required(ErrorMessage = "Mật khẩu là bắt buộc")]
-        [StringLength(100, MinimumLength = 6, ErrorMessage = "Mật khẩu phải có ít nhất 6 ký tự")]
-        public string Password { get; set; }
-
-        public bool IsAdmin { get; set; } = false;
     }
 }

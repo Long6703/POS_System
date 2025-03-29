@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POS.Shared", "POS.Shared\PO
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POS.Web", "POS.Web\POS.Web.csproj", "{6971A312-4778-4C0B-8F75-55139843EF89}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POS.Web.MVC", "POS.Web.MVC\POS.Web.MVC.csproj", "{046FDD9A-573F-4CDF-AFDC-5DDD0487E600}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{6971A312-4778-4C0B-8F75-55139843EF89}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6971A312-4778-4C0B-8F75-55139843EF89}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6971A312-4778-4C0B-8F75-55139843EF89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{046FDD9A-573F-4CDF-AFDC-5DDD0487E600}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{046FDD9A-573F-4CDF-AFDC-5DDD0487E600}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{046FDD9A-573F-4CDF-AFDC-5DDD0487E600}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{046FDD9A-573F-4CDF-AFDC-5DDD0487E600}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

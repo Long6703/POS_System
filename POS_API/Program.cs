@@ -15,6 +15,7 @@ using POS_API.Services.Imp;
 using POS_API.Services.IServices;
 using System.Text;
 using System.Threading.Channels;
+using static POS_API.Repository.IRepository.IGenericRepository;
 
 namespace POS_API
 {
@@ -25,11 +26,20 @@ namespace POS_API
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
-            builder.Services.AddScoped<IAuthRepository, AutheRepository>();
+            builder.Services.AddHttpContextAccessor();
+            builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+            builder.Services.AddScoped<IUserShopRepository, UserShopRepository>();
             builder.Services.AddScoped<IUserRepository, UserRepository>();
+            builder.Services.AddScoped<IProductRepository, ProductRepository>();
+            builder.Services.AddScoped<IOrderRepository, OrderRepository>();
+            builder.Services.AddScoped<IOrderDetailRepository, OrderDetailRepository>();
+            builder.Services.AddScoped<IPaymentRepository, PaymentRepository>();
+            builder.Services.AddScoped<IAuthRepository, AutheRepository>();
+            builder.Services.AddScoped<IShopRepository, ShopRepository>();
             builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
             builder.Services.AddScoped<IUserService, UserService>();
-            builder.Services.AddScoped<IAuthService, AuthService>();
+            builder.Services.AddScoped<IAuthService,  AuthService>();
+            builder.Services.AddScoped<IOrderService, OrderService>();
             builder.Services.AddScoped<IShopService, ShopService>();
             builder.Services.AddScoped<JwtHelper>();
 

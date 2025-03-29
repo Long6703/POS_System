@@ -5,12 +5,14 @@ namespace POS_API.Repository.IRepository
 {
     public interface IUnitOfWork : IDisposable
     {
-        IGenericRepository<User> Users { get; }
-        IGenericRepository<Product> Products { get; }
-        IGenericRepository<Order> Orders { get; }
-        IGenericRepository<OrderDetail> OrderDetails { get; }
-        IGenericRepository<Payment> Payments { get; }
-        IGenericRepository<Shop> Shops { get; }
+        IUserRepository Users { get; }
+        IProductRepository Products { get; }
+        IOrderRepository Orders { get; }
+        IPaymentRepository Payments { get; }
+        IShopRepository Shops { get; }
+        IOrderDetailRepository OrderDetails { get; }
+        IAuthRepository Auth { get; }
+        IUserShopRepository UserShops { get; }
 
         public void Dispose()
         {

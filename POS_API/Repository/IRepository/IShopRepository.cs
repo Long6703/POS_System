@@ -1,4 +1,5 @@
-﻿using POS.Shared.Entities;
+﻿using POS.Shared.DTOs;
+using POS.Shared.Entities;
 using static POS_API.Repository.IRepository.IGenericRepository;
 
 namespace POS_API.Repository.IRepository
@@ -7,5 +8,8 @@ namespace POS_API.Repository.IRepository
     {
         Task<IEnumerable<Shop>> GetShopsWithDetailsAsync();
         Task<Shop> GetShopByIdWithDetailsAsync(int id);
+        Task<IEnumerable<ShopDto>> GetShopsWithShopOwnerAsync();
+        Task<bool> UpdateDelete(int shopId);
+
     }
 }

@@ -16,7 +16,7 @@ namespace POS_API.Repository.Imp
             _dbSet = context.Set<T>();
         }
 
-        public async Task<T?> GetByIdAsync(int id)
+        public async Task<T?> GetByIdAsync(object id)
         {
             return await _dbSet.FindAsync(id);
         }

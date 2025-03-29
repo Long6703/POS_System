@@ -4,7 +4,6 @@ using Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage;
 using Microsoft.AspNetCore.Components.Web;
 using POS.Web.Middlewares;
 using POS.Web.Services;
-using POS.Web.Services.IService;
 
 namespace POS.Web
 {
@@ -17,9 +16,15 @@ namespace POS.Web
             // Add services to the container.
             builder.Services.AddAntDesign();
             builder.Services.AddRazorPages();
-            builder.Services.AddServerSideBlazor();
+            builder.Services.AddServerSideBlazor()
+            .AddCircuitOptions(options =>
+            {
+                options.DisconnectedCircuitRetentionPeriod = TimeSpan.FromMinutes(3);
+                options.JSInteropDefaultCallTimeout = TimeSpan.FromSeconds(30);
+            });
+            builder.Services.AddScoped<AuthenticationStateProvider, CustomAuthStateProvider>();
+            builder.Services.AddAuthorizationCore();
             builder.Services.AddHttpContextAccessor();
-            builder.Services.AddScoped<ISessionService, SessionService>();
             builder.Services.AddHttpClient<BaseApiService>(client =>
             {
                 client.BaseAddress = new Uri("http://localhost:6703/");
@@ -44,7 +49,6 @@ namespace POS.Web
             app.UseMiddleware<ErrorHandlingMiddleware>();
 
             app.UseStaticFiles();
-            app.UseSession();
 
             app.UseRouting();
 
