@@ -1,0 +1,109 @@
+﻿@using POS.Shared
+@using POS.Shared.DTOs
+@model PagedResultDto<ShopDto>
+
+@{
+    ViewData["Title"] = "Shops Management";
+}
+
+<div class="container mt-4">
+    <h2 class="mb-3">Shops Management</h2>
+
+    <!-- Search Form -->
+    <form method="get" class="mb-4">
+        <div class="row">
+            <div class="col-md-3">
+                <input type="text" name="name" class="form-control" placeholder="Shop Name" value="@Context.Request.Query["name"]">
+            </div>
+            <div class="col-md-3">
+                <input type="text" name="address" class="form-control" placeholder="Address" value="@Context.Request.Query["address"]">
+            </div>
+            <div class="col-md-2">
+                <select name="sortBy" class="form-control">
+                    <option value="Id" selected>Sort by ID</option>
+                    <option value="Name">Sort by Name</option>
+                    <option value="Address">Sort by Address</option>
+                </select>
+            </div>
+            <div class="col-md-2">
+                <select name="isDescending" class="form-control">
+                    <option value="false" selected>Ascending</option>
+                    <option value="true">Descending</option>
+                </select>
+            </div>
+            <div class="col-md-2">
+                <button type="submit" class="btn btn-primary">Search</button>
+            </div>
+        </div>
+    </form>
+
+    <!-- Shops Table -->
+    <table class="table table-bordered">
+        <thead class="table-dark">
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Shop Owner Email</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model.Items.Any())
+            {
+                @foreach (var shop in Model.Items)
+                {
+                    <tr>
+                        <td>@shop.Id</td>
+                        <td>@shop.Name</td>
+                        <td>@shop.Address</td>
+                        <td>@shop.EmailShopOwner</td>
+                        <td>
+                            @if (shop.isDeleted)
+                            {
+                                <span class="badge bg-danger">Deleted</span>
+                            }
+                            else
+                            {
+                                <span class="badge bg-success">Active</span>
+                            }
+                        </td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="5" class="text-center">No shops found.</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    @if (Model.TotalPages > 1)
+    {
+        <nav>
+            <ul class="pagination">
+                <li class="page-item @(Model.HasPrevious ? "" : "disabled")">
+                    <a class="page-link" href="?pageNumber=@(Model.PageNumber - 1)&pageSize=@Model.PageSize" aria-label="Previous">
+                        <span aria-hidden="true">&laquo; Previous</span>
+                    </a>
+                </li>
+
+                @for (var i = 1; i <= Model.TotalPages; i++)
+                {
+                    <li class="page-item @(i == Model.PageNumber ? "active" : "")">
+                        <a class="page-link" href="?pageNumber=@i&pageSize=@Model.PageSize">@i</a>
+                    </li>
+                }
+
+                <li class="page-item @(Model.HasNext ? "" : "disabled")">
+                    <a class="page-link" href="?pageNumber=@(Model.PageNumber + 1)&pageSize=@Model.PageSize" aria-label="Next">
+                        <span aria-hidden="true">Next &raquo;</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    }
+</div>
+
