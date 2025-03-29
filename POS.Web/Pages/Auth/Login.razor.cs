@@ -23,8 +23,8 @@ namespace POS.Web.Pages.Auth
                 var response = await ApiService.PostAsync<LoginRequest, LoginResponse>("api/auth/login", _loginRequest);
                 if (response != null && !string.IsNullOrEmpty(response.Token))
                 {
-                    SessionService.SetString("AuthToken", response.Token);
-                    Navigation.NavigateTo("/");
+                    AuthStateProvider.SetAuthToken(response.Token);
+                    Navigation.NavigateTo("/shops");
                 }
                 else
                 {
