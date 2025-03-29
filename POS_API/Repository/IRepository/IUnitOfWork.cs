@@ -10,6 +10,7 @@ namespace POS_API.Repository.IRepository
         IGenericRepository<Order> Orders { get; }
         IGenericRepository<OrderDetail> OrderDetails { get; }
         IGenericRepository<Payment> Payments { get; }
+        IGenericRepository<Shop> Shops { get; }
 
         public void Dispose()
         {

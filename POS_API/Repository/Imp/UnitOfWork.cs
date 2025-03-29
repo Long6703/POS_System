@@ -13,6 +13,7 @@ namespace POS_API.Repository.Imp
         public IGenericRepository<Order> Orders { get; }
         public IGenericRepository<OrderDetail> OrderDetails { get; }
         public IGenericRepository<Payment> Payments { get; }
+        public IGenericRepository<Shop> Shops { get; }
 
         public UnitOfWork(POSSystemDBContext context)
         {
@@ -22,6 +23,7 @@ namespace POS_API.Repository.Imp
             Orders = new GenericRepository<Order>(context);
             OrderDetails = new GenericRepository<OrderDetail>(context);
             Payments = new GenericRepository<Payment>(context);
+            Shops = new GenericRepository<Shop>(context);
         }
 
         public async Task<int> CompleteAsync()
